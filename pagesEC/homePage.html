@@ -1,0 +1,249 @@
+<!-- Basic layout and typography examples page -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Twitter Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Jeff Risberg">
+
+  <link href="../css/bootstrap.css" rel="stylesheet">   
+  <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+   
+  <script src="../js/jquery-1.7.2.min.js"></script>
+  <script src="../js/bootstrap.js"></script>
+  <script src="../js/less-1.3.0.min.js"></script>
+    
+  <link href="../css/stylesEC.less" rel="stylesheet">
+
+	<style type="text/css">
+	body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	
+	#homeContentContainer {
+		background-color: #EEEEEE;
+		height: 515px;
+		width: 692px;
+	}
+	
+	.choice {
+		background-color: #FFFFFF;
+		width: 195px;
+		height: 220px;
+		border: 1px solid #EEEEEE;
+		float: left;
+		margin-left: 10px;
+		padding: 10px;
+		margin-top: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	
+	.choice a,a:visited,a:hover {
+		text-decoration: none !important;
+		color: #777777;
+	}
+	
+	.choiceTitle {
+		padding-top: 20px;
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		color: #777777;
+	}
+	
+	.choiceImage {
+		margin-top: 15px;
+		margin-left: 35px;
+		width: 120px;
+		float: left;
+	}
+	
+	.choiceLabel {
+		display: none;
+		width: 195px;
+		height: 220px;
+	}
+	
+	.choice:hover .choiceLabel {
+		display: block;
+		background: rgba(115, 144, 98, .7);
+		position: absolute;
+		width: 185px;
+		height: 210px;
+		padding: 5px;
+		font-size: 15px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		font-weight: bold;
+	}
+	
+	.choice .choiceLabel .choiceLabelText a {
+		display: block;
+		color: #FFFFFF;
+		font-weight: bold;
+		font-size: 13px;
+		width: 165px;
+		height: 145px;
+		padding: 70px 5px 0 20px;
+	}
+	</style>
+	
+	<!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+	
+	<link rel="shortcut icon" href="../ico/favicon.ico">
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="../index.html">TB01</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+							data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li class="nav-header">Nav header</li>
+								<li><a href="#">Separated link</a></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul></li>
+					</ul>
+					<form class="navbar-form pull-right">
+						<input class="span2" type="text" placeholder="Email"> <input
+							class="span2" type="password" placeholder="Password">
+						<button type="submit" class="btn">Sign in</button>
+					</form>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div id="homeContentContainer">
+			<div class="choice">
+				<div class="choiceLabel">
+					<span class="choiceLabelText"><a
+						href="http://www.sustainablesv.org/ecocloud/index.php/showcase-of-solutions-for-planetary-sustainability"
+						style="color: white">
+						Enter innovative, game-changing and	scalable solutions highlighting ways of sustaining planetary resources.
+					</a></span>
+				</div>
+				<div class="choiceTitle">Call for Solutions Competition</div>
+				<div class="choiceImage">
+					<img alt="Showcase Logo" height="120px"
+						src="img/showcase.jpg"
+						width="120px" />
+				</div>
+			</div>
+			
+			<div class="choice">
+				<div class="choiceLabel">
+					<span class="choiceLabelText"><a
+						href="http://www.sustainablesv.org/ecocloud/index.php/sustainability-roadmap">
+						Use	SSV's Sustainability Roadmap to integrate sustainability across	your enterprise.
+				  </a></span>
+				</div>
+				<div class="choiceTitle">Implement Sustainability</div>
+				<div class="choiceImage">
+					<img alt="Implement Sustainability" height="120px"
+						src="img/path.png"
+						width="120px" />
+				</div>
+			</div>
+			
+			<div class="choice">
+				<div class="choiceLabel">
+					<span class="choiceLabelText"><a
+						href="http://www.sustainablesv.org/ecocloud/index.php/blog">
+						Share	innovative ideas, be inspired and collaborate with other
+							like-minded individuals.
+					</a></span>
+				</div>
+				<div class="choiceTitle">Share and Collaborate</div>
+				<div class="choiceImage">
+					<img alt="Collaboration" height="120px"
+						src="img/people_color.jpg"
+						width="120px" />
+				</div>
+			</div>
+			
+			<div class="choice">
+				<div class="choiceLabel">
+					<span class="choiceLabelText"><a
+						href="http://www.sustainablesv.org/ecocloud/index.php/market-place">
+						Shop and discover products, services and solutions from leading providers.</a></span>
+				</div>
+				<div class="choiceTitle">Marketplace</div>
+				<div class="choiceImage">
+					<img alt="Marketplace" height="120px"
+						src="img/shop.png"
+						width="120px" />
+				</div>
+			</div>
+			
+			<div class="choice">
+				<div class="choiceLabel">
+					<span class="choiceLabelText"><a
+						href="http://www.sustainablesv.org/ecocloud/index.php/solutions">
+						  Search for solutions.
+					</a></span>
+				</div>
+				<div class="choiceTitle">Find Solutions</div>
+				<div class="choiceImage">
+					<img alt="Find Solutions" height="120px"
+						src="img/magnifier_color.jpg"
+						width="120px" />
+				</div>
+			</div>
+			
+			<div class="choice">
+				<div class="choiceLabel">
+					<span class="choiceLabelText"><a
+						href="http://www.sustainablesv.org/ecocloud/index.php/topics">
+						Learn from industry leaders and advisors on a variety of sustainability	topics.
+				  </a></span>
+				</div>
+				<div class="choiceTitle">Learn</div>
+				<div class="choiceImage">
+					<img alt="Learn" height="120px"
+						src="img/book.png"
+						width="120px" />
+				</div>
+			</div>
+		</div>
+		<hr />
+
+		<footer>
+			<div class="row">
+				<div class="span6">
+					<p>&copy; Company 2012</p>
+				</div>
+				<div class="span6" style="text-align: right">
+					<p>All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- /container -->
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!-- Carousel, navs, collapser examples page -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Twitter Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Jeff Risberg">
+	
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	
+	<style type="text/css">
+		body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+		
+		.sidebar-nav {
+			padding: 9px 0;
+		}
+	</style>
+	
+	<!--[if lt IE 9]>
+		      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link rel="shortcut icon" href="ico/favicon.ico">
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand" href="../index.html">TB01</a>
+				<div class="nav-collapse collapse">
+					<p class="navbar-text pull-right">
+						Logged in as <a href="#" class="navbar-link">Username</a>
+					</p>
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<!--Sidebar content-->
+				<ul class="nav nav-list">
+					<li class="nav-header">Sidebar</li>
+					<li class="active"><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li class="nav-header">Sidebar</li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li class="nav-header">Sidebar</li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div>
+
+			<div class="span10">				
+
+				<h2>Carousel Example</h2>
+				<div class="bs-docs-example">
+					<div id="myCarousel" class="carousel slide" style="width: 700px;">
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/carousel-image-01.jpg" alt="">
+								<div class="carousel-caption">
+									<h4>First Thumbnail label</h4>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget
+										quam. Donec id elit non mi porta gravida at eget metus. Nullam
+										id dolor id nibh ultricies vehicula ut id elit.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/carousel-image-02.jpg" alt="">
+								<div class="carousel-caption">
+									<h4>Second Thumbnail label</h4>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget
+										quam. Donec id elit non mi porta gravida at eget metus. Nullam
+										id dolor id nibh ultricies vehicula ut id elit.</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/carousel-image-03.jpg" alt="">
+								<div class="carousel-caption">
+									<h4>Third Thumbnail label</h4>
+									<p>Cras justo odio, dapibus ac facilisis in, egestas eget
+										quam. Donec id elit non mi porta gravida at eget metus. Nullam
+										id dolor id nibh ultricies vehicula ut id elit.</p>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#myCarousel"
+							data-slide="prev">&lsaquo;</a> <a class="right carousel-control"
+							href="#myCarousel" data-slide="next">&rsaquo;</a>
+					</div>
+				</div>
+
+        <h2>Static NavTabs Example</h2>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Alpha</a></li>
+          <li><a href="#">Beta</a></li>
+          <li><a href="#">Gamma</a></li>
+          <li><a href="#">Delta</a></li>
+          <li><a href="#">Epsilon</a></li>
+        </ul>
+        
+        <h2>Animated NavTabs Example</h2>
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+          <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+          <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+          <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                 Nulla nec metus ut quam porta euismod sed et ligula. 
+                 Nam sit amet velit risus, sit amet hendrerit lectus. 
+                 Vestibulum in augue nec arcu dignissim sollicitudin et a felis. 
+                 Quisque lobortis erat quis ipsum dignissim eu luctus nibh placerat. 
+                 Nullam ut tellus erat. a non mi augue.</p>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <p>Proin tortor sapien, malesuada ut dictum sit amet, adipiscing eu orci. 
+                 Vestibulum mollis malesuada nisi quis sollicitudin. 
+                 Vivamus tellus dolor, ullamcorper ornare dictum nec, fringilla id sapien. 
+                 Aliquam et pulvinar enim. Vestibulum non neque vel ligula feugiat rhoncus. 
+                 Nulla pulvinar porttitor lectus, vitae fermentum eros convallis in.</p>                
+            </div>
+            <div class="tab-pane" id="tab3">
+              <p>Cras id mauris sed sem iaculis commodo. Sed tempor tempus velit eget dictum. 
+                 Maecenas mattis, tortor sit amet molestie eleifend, purus lectus molestie 
+                 libero, sit amet fringilla turpis nisi egestas lorem. Ut in auctor libero. 
+                 Aenean facilisis orci rutrum ipsum mollis eget condimentum felis rhoncus. 
+                 Integer ac lacus mi, vel dignissim justo. </p>
+            </div>
+          </div>
+        </div>    
+        
+				<h2>Collapse Example</h2>
+				<div class="accordion" id="accordion1">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse1One">
+							  Collapsible Group Item #1
+							</a>
+						</div>
+						<div id="collapse1One" class="accordion-body collapse in">
+							<div class="accordion-inner">Now is the time for all good men...</div>
+						</div>
+					</div>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse1Two">
+							  Collapsible Group Item #2
+							</a>
+						</div>
+						<div id="collapse1Two" class="accordion-body collapse">
+							<div class="accordion-inner">... to come to the aid of their party.</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion" id="accordion2">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2One">Meta data
+								fields</a>
+						</div>
+						<div id="collapse2One" class="accordion-body collapse">
+							<div class="accordion-inner">
+							  i.e., company size, company	parameters
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion" id="accordion3">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapse3One">System fields</a>
+						</div>
+						<div id="collapse3One" class="accordion-body collapse">
+							<div class="accordion-inner">
+							  i.e, last updated, date created
+					    </div>
+						</div>
+					</div>
+				</div>
+						
+			</div>
+      
+			<hr>
+
+			<footer>
+				<div class="row-fluid">
+					<div class="span10">
+						<p>&copy; Company 2012</p>
+					</div>
+					<div class="span2" style="text-align: right">
+						<p>All Rights Reserved</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+</body>
+</html

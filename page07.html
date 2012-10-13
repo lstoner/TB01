@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+    <title>Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jeff Risberg">
+  
+    <link href="css/bootstrap.css" rel="stylesheet">   
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <style type="text/css">
+      body {
+	      padding-top: 60px;
+	      padding-bottom: 40px;
+	    }
+	    .sidebar-nav {
+	      padding: 9px 0;
+	    }
+    </style>
+    
+     <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    
+    <!-- In this example, we load the JS libraries first, so that they can be used by 
+         inline scripts to support the demo fragments.  The suggested approach is to load the JS
+         libraries last, so that the page is available to the browser as soon as possible.
+    -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.raty.min.js"></script>
+	</head>
+	<body>
+	
+	  <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">         
+          <a class="brand" href="../index.html">TB01</a>
+          <div class="nav-collapse collapse">            
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>        
+    
+    <div class="container-fluid">
+      <div class="row-fluid">
+    
+	      <div class="span2">
+	        <!--Sidebar content-->
+	        <ul class="nav nav-list">
+	          <li class="nav-header">Sidebar</li>
+	          <li class="active"><a href="#">Link</a></li>
+	          <li><a href="#">Link</a></li>
+	          <li><a href="#">Link</a></li>
+	          <li class="nav-header">Sidebar</li>
+	          <li><a href="#">Link</a></li>
+	          <li><a href="#">Link</a></li>
+	          <li class="nav-header">Sidebar</li>
+	          <li><a href="#">Link</a></li>
+	          <li><a href="#">Link</a></li>
+	        </ul>
+	      </div>
+
+        <div class="span10">        
+		      <h2>Ratings Example</h2>
+		      		       
+					<div id="default-demo" class="session-first">Default options:</div>
+					<div id="default"></div>
+		
+					<div id="fixed-demo" class="session">Started with a score and read only value:</div>
+					<div id="fixed"></div>
+		
+					<div id="score-demo" class="session">Starting with a callback:</div>
+					<div id="score" data-rating="3"></div>
+		
+					<div id="anyone-demo" class="session">A hint for no rated elements when it's read-only:</div>
+					<div id="anyone"></div>
+		
+					<div id="number-demo" class="session">Custom score name and a number of stars:</div>
+					<div id="number"></div>
+		
+					<div id="click-demo" class="session">Using click function:</div>
+					<div id="click"></div>				
+				</div>
+			</div>
+
+		  <hr>
+
+      <footer>      
+       <div class="row">
+        <div class="span10">
+          <p>&copy; Company 2012</p>
+        </div>
+        <div class="span2" style="text-align: right">
+          <p>All Rights Reserved</p>
+        </div>
+       </div>    
+      </footer>
+
+    </div><!--/.container-->
+    
+  	<script type="text/javascript">
+			$(function() {
+
+				$('#default').raty();
+
+				$('#fixed').raty({
+					readOnly	: true,
+					score		: 2
+				});
+
+				$('#score').raty({
+				    score: function() {
+				        return $(this).attr('data-rating');
+				    }
+				});
+
+				$('#anyone').raty({
+					readOnly	: true,
+					noRatedMsg	: 'anyone rated this product yet!'
+				});
+
+				$('#number').raty({
+					scoreName	: 'entity.score',
+					number		: 10
+				});
+
+				$('#click').raty({
+					click: function(score, evt) {
+						alert('ID: ' + $(this).attr('id') + '\nscore: ' + score + '\nevent: ' + evt);
+					}
+				});				
+			});
+		</script>
+	</body>
+</html>

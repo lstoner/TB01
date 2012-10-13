@@ -1,0 +1,212 @@
+<!-- table examples page -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Twitter Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Jeff Risberg">
+	
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	
+	<style type="text/css">
+		body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+		
+		.sidebar-nav {
+			padding: 9px 0;
+		}
+	</style>
+	
+	<!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link rel="shortcut icon" href="ico/favicon.ico">
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand" href="../index.html">TB01</a>
+				<div class="nav-collapse collapse">
+					<p class="navbar-text pull-right">
+						Logged in as <a href="#" class="navbar-link">Username</a>
+					</p>
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<!--Sidebar content-->
+				<ul class="nav nav-list">
+					<li class="nav-header">Sidebar</li>
+					<li class="active"><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li class="nav-header">Sidebar</li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li class="nav-header">Sidebar</li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+					<li><a href="#">Link</a></li>
+				</ul>
+			</div>
+			<div class="span10">
+				<!--Body content-->
+				<h4>Regular table</h4>
+				<p>
+					<table class="table">
+            <tr>
+              <th>Name</th>
+              <th>Summary</th>
+              <th>Contributed By</th>
+              <th>Comments Enabled</th>              
+              <th>Action<th>
+            </tr>
+            <tr>
+              <td>Water Management</td>
+              <td>Proposes use of recycled...</td>
+              <td>Jack Jones</td>
+              <td><input type="checkbox" id="inlineCheckbox1" checked="checked"></td>
+              <td style="white-space: nowrap">
+                <button href="#">Edit</button>
+                <button href="#">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Solar Retrofits</td>
+              <td>Attach Class 4 solar collectors...</td>
+              <td>Vivat Concere</td>
+              <td><input type="checkbox" id="inlineCheckbox1" checked="checked"></td>
+              <td style="white-space: nowrap">
+                <button href="#">Edit</button>
+                <button href="#">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Anerobic Digester</td>
+              <td>Recovery of energy from waste...</td>
+              <td>Duis Tolema</td>
+              <td><input type="checkbox" id="inlineCheckbox1" value="false"></td>
+              <td style="white-space: nowrap">
+                <button href="#">Edit</button>
+                <button href="#">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Space-based solar arrays</td>
+              <td>Above the atmosphere, sunlight...</td>
+              <td>Lorem Ipsum</td>
+              <td><input type="checkbox" id="inlineCheckbox1" checked="checked"></td>
+              <td style="white-space: nowrap">
+                <button href="#">Edit</button>
+                <button href="#">Delete</button>
+              </td>
+            </tr>
+          </table>
+				</p>
+				<h4>Striped table</h4>
+				<p>
+          <table class="table table-striped">
+            <tr>
+              <th>Name</th>
+              <th>Summary</th>
+              <th>Contributed By</th>
+              <th>Comments Enabled</th>              
+              <th>Action<th>
+            </tr>
+            <tr>
+              <td>Water Management</td>
+              <td>Proposes use of recycled...</td>
+              <td>Jack Jones</td>
+              <td><input type="checkbox" id="inlineCheckbox1" checked="checked"></td>
+              <td style="white-space: nowrap">
+                <button href="#">Edit</button>
+                <button href="#">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Solar Retrofits</td>
+              <td>Attach Class 4 solar collectors...</td>
+              <td>Vivat Concere</td>
+              <td><input type="checkbox" id="inlineCheckbox1" checked="checked"></td>
+              <td style="white-space: nowrap">
+                <button href="#">Edit</button>
+                <button href="#">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Anerobic Digester</td>
+              <td>Recovery of energy from waste...</td>
+              <td>Duis Tolema</td>
+              <td><input type="checkbox" id="inlineCheckbox1" value="false"></td>
+              <td style="white-space: nowrap">
+                <button href="#">Edit</button>
+                <button href="#">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Space-based solar arrays</td>
+              <td>Above the atmosphere, sunlight...</td>
+              <td>Lorem Ipsum</td>
+              <td><input type="checkbox" id="inlineCheckbox1" checked="checked"></td>
+              <td style="white-space: nowrap">
+                <button href="#">Edit</button>
+                <button href="#">Delete</button>
+              </td>
+            </tr>
+          </table>
+        </p>
+        <div class="pagination">
+			    <ul>
+			    <li><a href="#">Prev</a></li>
+			    <li><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">Next</a></li>
+			    </ul>
+			  </div>
+			</div>
+		</div>
+
+		<hr>
+
+		<footer>      
+      <div class="row">
+       <div class="span10">
+         <p>&copy; Company 2012</p>
+       </div>
+       <div class="span2" style="text-align: right">
+         <p>All Rights Reserved</p>
+       </div>
+      </div>    
+    </footer>
+	</div>
+
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html
