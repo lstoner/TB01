@@ -33,13 +33,7 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <!-- by default, the next element is not shown -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar">A</span>
-            <span class="icon-bar">B</span>
-            <span class="icon-bar">C</span>
-          </a>
-           <a class="brand" href="../index.html">TB01</a>
+          <a class="brand" href="/tb01/index.html">TB01</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
@@ -153,7 +147,7 @@
 			        <?php foreach ($fields as $field) { ?>
 			          <td><?php echo $user[$field]; ?></td>
 			        <?php } ?>
-			        <td data-href="userEdit.php?id=<?php echo $user['id'] ?>">
+			        <td data-href="/tb01/userEdit.php?id=<?php echo $user['id'] ?>">
 			          <div class="btn">Edit &raquo;</div>
 			        </td>
 			      </tr>
