@@ -128,160 +128,128 @@
 			  </div>
 			</div>	    
    
-      <div class="row-fluid">
-	      <div class="span12">   
-	        <div class="span3">
-			        <div class="widget w1">
-			          <div class="title">Resources</div>	          
-			          <div class="post">
-		           		Energy
-		            </div>
-		            <div class="post">
-		               Information 
-		            </div>
-		            <div class="post">
-		              	Materials 
-		            </div> 
-		            <div class="post">
-		              Water
-		            </div>  	                    
-			        </div>
+      <div class="row-fluid">	       
+	      <div class="span3">
+			    <div class="widget w1">
+			      <div class="title">Resources</div>	          
+			      <div class="post">Energy</div>
+		        <div class="post">Information</div>
+		        <div class="post">Materials</div> 
+		        <div class="post">Water</div>  	                    
+			    </div>
 			        
-			        <div class="widget w2">
-			          <div class="title">Industry</div>	         
-			          <div class="event">
-			            Education 
-			          </div>	     
-			          <div class="event">
-		             	Finance/Insurance/Investment 
-		            </div>   
-		               <div class="event">
-		             	Food/Agriculture  
-		            </div>    	            
-			        </div>
-			        
-			        <div class="widget w3">
-		            <div class="title">Planetary System</div>            
-		            <div class="activity">              
-		              	Air Quality Regulation 
-		            </div>
-		            <div class="activity">             
-		             Soil Vitality, Erosion & Chemical Pollution Control 
-		            </div>
-		            <div class="activity">             
-		           Energy Capture, Transport, Storage 
-		             </div>
-		            <div class="activity">             
-		             Radiation Protection 
-		            </div>                      
-		          </div>
-		           	       	     
-		      </div><!--/span3-->
+			    <div class="widget w2">
+			      <div class="title">Industry</div>	         
+			      <div class="event">Education</div>	     
+			      <div class="event">Finance/Insurance/Investment</div>   
+		        <div class="event">Food/Agriculture</div>    	            
+			    </div>
+			       
+			    <div class="widget w3">
+		        <div class="title">Planetary System</div>            
+		        <div class="activity">Air Quality Regulation</div>
+		        <div class="activity">Soil Vitality, Erosion & Chemical Pollution Control</div>
+		        <div class="activity">Energy Capture, Transport, Storage</div>
+		        <div class="activity">Radiation Protection</div>                      
+		      </div>		           	       	    
+		    </div><!--/span3-->
 	      
-	         
-		      <div class="span9">
-		      View my Saved Product..
+	      <div class="span9">		   
 		     	<div>
-		         <h2>Featured Product/ Editor's Pick</h2>
-		         <p>
-		          <div id="myCarousel" class="carousel slide" >
-					    <!-- Carousel items -->
-					    <div class="carousel-inner">
-					      <div class="active item"><img width="400" height="100" src="../img/carousel-image-04.jpg" class="img-rounded">   The solar panel is....</div>
-					      <div class="item"><img width="400" height="100" src="../img/carousel-image-05.jpg" class="img-rounded"></div>
-					      <div class="item"><img width="400" height="100" src="../img/carousel-image-06.jpg" class="img-rounded"></div>
-					    </div>
-					    <!-- Carousel nav -->
-					    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-					    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-					</div>				
-				             
-		           See editor's pick for the featured product. 
-		         </p>      
-		     </div>
+		        <h4>Featured Product / Editor's Pick</h4>
+		        <div id="myCarousel" class="carousel slide" >
+					     <!-- Carousel items -->
+					     <div class="carousel-inner">
+					       <div class="active item">
+					         <img width="400" height="100" src="../img/carousel-image-04.jpg" class="img-rounded">
+					       </div>
+					       <div class="item">
+					         <img width="400" height="100" src="../img/carousel-image-05.jpg" class="img-rounded">
+					       </div>
+					       <div class="item">
+					         <img width="400" height="100" src="../img/carousel-image-06.jpg" class="img-rounded">
+					       </div>
+					     </div>
+					     <!-- Carousel nav -->
+					     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					     <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+					  </div>				      
+		      </div>
 		     
-<?php $data = array();
-         $data['2']= array("id"=>1,"title" => "High Efficiency Concentrator PV Panel",   'updated_on' => "2012/09/18", "description" => "description1");
-         $data['3'] = array("id"=>2,"title" => "M2 Renewables", 'updated_on' => "2012/10/10", "description" => "description2");
-         $data['4'] = array("id"=>3,"title" => "Rainwater Tanks", 'updated_on' => "2012/10/10", "description" => "description3");
-         $data['5'] = array("id"=>4,"title" => "Green Data Centers", 'updated_on' => "2012/10/10", "description" => "description3");
-         $data['5'] = array("id"=>5,"title" => "Smart metering for the Smart Grid", 'updated_on' => "2012/10/10", "description" => "description3");
-?>
-
-<Legend>Your most recently viewed Products  | View more...</Legend>  
-<div class="row-fluid">
+		      <Legend>Your most recently viewed products | View more...</Legend>          
         
- <?php if ($data) { ?>	
-  <div><!-- box -->
-    <?php $count=0;?>
-    <div class="row-fluid" style="margin-bottom: 10px">
+          <?php $data = array();
+            $data['1'] = array("id"=>1,"title" => "Concentrator PV Panel", 'updated_on' => "2012/09/18", "description" => "High-eff industrial solar panel");
+            $data['2'] = array("id"=>2,"title" => "M2 Renewables", 'updated_on' => "2012/10/10", "description" => "Municipal waste recycling systems");
+            $data['3'] = array("id"=>3,"title" => "Rainwater Tanks", 'updated_on' => "2012/10/15", "description" => "Collector system for households");            
+          ?>
+          
+          <?php if ($data) { ?>	                       
+            <?php $count=0;?>
+            <div class="row-fluid" style="margin-bottom: 10px">
     
-      <?php foreach ($data as $product) { ?>
+              <?php foreach ($data as $product) { ?>
         
-        <?php /* Create a new row if needed, on count = 3, 6, 9, ... */ ?>
-        <?php if ($count > 0 && $count%3==0) { echo "</div>"; } ?>
-        <?php if ($count > 0 && $count%3==0) { echo "<div class='row-fluid' style='margin-bottom: 10px'>"; } ?>
+                <?php /* Create a new row if needed, on count = 3, 6, 9, ... */ ?>
+                <?php if ($count > 0 && $count%3==0) { echo "</div>"; } ?>
+                <?php if ($count > 0 && $count%3==0) { echo "<div class='row-fluid' style='margin-bottom: 10px'>"; } ?>
       
-        <div class="span4">
-          <a href="<?php echo'view/'.$product['id']?>">  <img width="100" height="100" src="../img/challengeEC.png" align="middle" ></a>
-       <div style="font-size: 16px; font-weight: bold;">
-            <a href="<?php echo'view/'.$product['id']?>">
-              <?php echo $product['title']; ?>
-            </a>
-          </div>
+                <div class="span4">
+                    <a href="<?php echo'view/'.$product['id']?>">  
+                      <img width="100" height="100" src="../img/challengeEC.png" align="middle" >
+                  </a>
+                  <div style="font-size: 16px; font-weight: bold;">
+                      <a href="<?php echo'view/'.$product['id']?>">
+                         <?php echo $product['title']; ?>
+                      </a>
+                  </div>
   
-          <?php echo $product['updated_on'] > 0 ? $product['updated_on'] : ""; ?>
+                  <?php echo $product['updated_on'] > 0 ? $product['updated_on'] : ""; ?>
                     
-          <div><?php echo $product['description'] ?> </div>
-        </div><!-- span4 -->
-        <?php $count++; ?>                    
-      <?php } ?>  
-    </div> 
-   
-  </div><!-- box -->
-<?php } ?>
+                  <div><?php echo $product['description'] ?> </div>
+                </div><!-- span4 -->
+                <?php $count++; ?>                    
+              <?php } ?>  
+            </div>   
+          <?php } ?>
            
-   <?php $products = array();
-         $products['2']= array("id"=>1,"title" => "Concentrator PV Panel",   'updated_on' => "2012/09/18", "description" => "description1");
-         $products['3'] = array("id"=>2,"title" => "M2 Renewables", 'updated_on' => "2012/10/10", "description" => "description2");
-         $products['4'] = array("id"=>3,"title" => "Rainwater Tanks", 'updated_on' => "2012/10/10", "description" => "description3");
- 
-?>        
+          <?php $products = array();
+            $products['1'] = array("id"=>1,"title" => "Tesla Model S", 'updated_on' => "2012/09/21", "description" => "All-Electric sedan");
+            $products['2'] = array("id"=>2,"title" => "Harrel Remodeling", 'updated_on' => "2012/07/19", "description" => "Rebuilding with green in mind");
+            $products['3'] = array("id"=>3,"title" => "R-80 Microinverter", 'updated_on' => "2012/10/15", "description" => "Microinverter for solar panel");
+            $products['4'] = array("id"=>4,"title" => "Vantage Data Centers", 'updated_on' => "2012/06/21", "description" => "Green Data Centers");
+            $products['5'] = array("id"=>5,"title" => "Silver Spring Networks", 'updated_on' => "2012/09/22", "description" => "Smart metering for the Smart Grid");
+          ?>        
            
-<Legend>Products you might be interested in</Legend>
-<div class="row-fluid">
+          <Legend>Products you might be interested in:</Legend>
         
- <?php if ($products) { ?>	
-  <div><!-- box -->
-    <?php $count=0;?>
-    <div class="row-fluid" style="margin-bottom: 10px">
+          <?php if ($products) { ?>	 
+            <?php $count=0;?>
+            <div class="row-fluid" style="margin-bottom: 10px">
     
-      <?php foreach ($products as $product) { ?>
+              <?php foreach ($products as $product) { ?>
         
-        <?php /* Create a new row if needed, on count = 3, 6, 9, ... */ ?>
-        <?php if ($count > 0 && $count%3==0) { echo "</div>"; } ?>
-        <?php if ($count > 0 && $count%3==0) { echo "<div class='row-fluid' style='margin-bottom: 10px'>"; } ?>
+                <?php /* Create a new row if needed, on count = 3, 6, 9, ... */ ?>
+                <?php if ($count > 0 && $count%3==0) { echo "</div>"; } ?>
+                <?php if ($count > 0 && $count%3==0) { echo "<div class='row-fluid' style='margin-bottom: 10px'>"; } ?>
       
-        <div class="span4">
-          <a href="<?php echo'view/'.$product['id']?>">  <img width="100" height="100" src="../img/challengeEC.png" align="middle" ></a>
-       <div style="font-size: 16px; font-weight: bold;">
-            <a href="<?php echo'view/'.$product['id']?>">
-              <?php echo $product['title']; ?>
-            </a>
-          </div>
+                <div class="span4">
+                  <a href="<?php echo'view/'.$product['id']?>">  <img width="100" height="100" src="../img/challengeEC.png" align="middle" ></a>
+                  <div style="font-size: 16px; font-weight: bold;">
+                    <a href="<?php echo'view/'.$product['id']?>">
+                     <?php echo $product['title']; ?>
+                     </a>
+                  </div>
   
-          <?php echo $product['updated_on'] > 0 ? $product['updated_on'] : ""; ?>
+                  <?php echo $product['updated_on'] > 0 ? $product['updated_on'] : ""; ?>
                     
-          <div><?php echo $product['description'] ?> </div>
-        </div><!-- span4 -->
-        <?php $count++; ?>                    
-      <?php } ?>  
-    </div> 
-  </div><!-- box -->
-<?php } ?>
-           
-           
-	        </div><!-- /row -->
+                  <div><?php echo $product['description'] ?> </div>
+                </div><!-- span4 -->
+                <?php $count++; ?>                    
+              <?php } ?>  
+            </div>           
+          <?php } ?>
+                     
         </div><!--/span-->
 	    </div><!-- /row -->
 	     
