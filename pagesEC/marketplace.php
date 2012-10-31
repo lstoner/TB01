@@ -20,15 +20,43 @@
       body {
         padding-top: 40px;
         padding-bottom: 10px;
-      }    
-      .challenge {
-        background: #bba;
-        border-radius: 10px;
-        height: 330px;
-        padding: 10px;
+      }
+      hr { 
+        height: 3px; color: #888 !important; background-color: #888 !important;
+      }     
+      .widget > div {       
+        padding: 3px 5px 3px 5px;             
+        background-color: #f9f9f9;  
+        border-bottom: 1px solid #ddd;      
+      }
+      .widget > div.title {       
+        font-weight: bold;       
+        margin-top: 5px;
+        background-color: #33a9c8;
+        color: white;
+        border-radius: 5px 5px 0px 0px; 
+      }      
+      .widget > div:nth-child(2n+0) {       
+        background-color: #f0f0f0; 
+      }
+      .widget > div:last-child {              
+        border-radius: 0px 0px 5px 5px;
+        margin-bottom: 5px;   
+      }
+      .widget.w1 div.title {
+        background-color: #0088cc;
+      }
+      .widget.w2 div.title {
+        background-color: orange;
+      }
+      .widget.w3 div.title {
+        background-color: green;
+      }
+      .widget.w4 div.title {
+        background-color: #33a9c8;
       }
     </style>    
-
+ 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -102,7 +130,7 @@
    
       <div class="row-fluid">
 	      <div class="span12">   
-	           <div class="span3">
+	        <div class="span3">
 			        <div class="widget w1">
 			          <div class="title">Resources</div>	          
 			          <div class="post">
@@ -148,11 +176,11 @@
 		            </div>                      
 		          </div>
 		           	       	     
-		    </div><!--/span3-->
+		      </div><!--/span3-->
 	      
 	         
-		     <div class="span9">
-		     View my Saved Product..
+		      <div class="span9">
+		      View my Saved Product..
 		     	<div>
 		         <h2>Featured Product/ Editor's Pick</h2>
 		         <p>
@@ -168,7 +196,7 @@
 					    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div>				
 				             
-		           see editor's pick for the featured product. 
+		           See editor's pick for the featured product. 
 		         </p>      
 		     </div>
 		     
@@ -180,7 +208,7 @@
          $data['5'] = array("id"=>5,"title" => "Smart metering for the Smart Grid", 'updated_on' => "2012/10/10", "description" => "description3");
 ?>
 
-<Legend>Your most recently viewed Product  | View more...</Legend>  
+<Legend>Your most recently viewed Products  | View more...</Legend>  
 <div class="row-fluid">
         
  <?php if ($data) { ?>	
@@ -274,46 +302,3 @@
     
   </body>
 </html>
-
-    
-    <style type="text/css">
-      body {
-        padding-top: 40px;
-        padding-bottom: 10px;
-      }
-      hr { 
-        height: 3px; color: #888 !important; background-color: #888 !important;
-      }     
-      .widget > div {       
-        padding: 3px 5px 3px 5px;             
-        background-color: #f9f9f9;  
-        border-bottom: 1px solid #ddd;      
-      }
-      .widget > div.title {       
-        font-weight: bold;       
-        margin-top: 5px;
-        background-color: #33a9c8;
-        color: white;
-        border-radius: 5px 5px 0px 0px; 
-      }      
-      .widget > div:nth-child(2n+0) {       
-        background-color: #f0f0f0; 
-      }
-      .widget > div:last-child {              
-        border-radius: 0px 0px 5px 5px;
-        margin-bottom: 5px;   
-      }
-      .widget.w1 div.title {
-        background-color: #0088cc;
-      }
-      .widget.w2 div.title {
-        background-color: orange;
-      }
-      .widget.w3 div.title {
-        background-color: green;
-      }
-      .widget.w4 div.title {
-        background-color: #33a9c8;
-      }
-    </style>    
- 
