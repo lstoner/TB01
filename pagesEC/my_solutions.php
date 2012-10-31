@@ -24,36 +24,9 @@
       hr { 
         height: 3px; color: #888 !important; background-color: #888 !important;
       }   
-      .widget > div {       
-        padding: 3px 5px 3px 5px;             
-        background-color: #f9f9f9;  
-        border-bottom: 1px solid #ddd;      
-      }
-      .widget > div.title {       
-        font-weight: bold;       
-        margin-top: 5px;
-        background-color: #33a9c8;
-        color: white;
-        border-radius: 5px 5px 0px 0px; 
-      }      
-      .widget > div:nth-child(2n+0) {       
-        background-color: #f0f0f0; 
-      }
-      .widget > div:last-child {              
-        border-radius: 0px 0px 5px 5px;
-        margin-bottom: 5px;   
-      }
-      .widget.w1 div.title {
-        background-color: #0088cc;
-      }
-      .widget.w2 div.title {
-        background-color: orange;
-      }
-      .widget.w3 div.title {
-        background-color: green;
-      }
-      .widget.w4 div.title {
-        background-color: #33a9c8;
+      .solution {
+        background: #eee;
+        border-radius: 5px;
       }
     </style>    
 
@@ -128,7 +101,40 @@
 			  </div>
 			</div>	    
    
-      to be filled in   
+      <?php $data = array();
+        $data['1'] = array("id" => 1, "title" => "Water Recycling", 'created_on' => "09/18/12", 'updated_on' => '12/13/12',
+        		"description" => "Water recycling can reduce the water consumption in every household");
+        $data['2'] = array("id" => 2, "title" => "Plasma-Arc Burning", 'created_on' => "10/10/12", 'updated_on' => '12/13/12',
+        		"description" => "A plasma-arc is a new way to dispose of wastes, producing very little by-products");
+        $data['3'] = array("id" => 3, "title" => "Anaerobic Digesters", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
+        		"description" => "Anerobic digesters can actually produce energy from waste.");     
+        $data['4'] = array("id" => 4, "title" => "Cogeneration", 'created_on' => "04/01/12", 'updated_on' => '04/01/13',
+        		"description" => "Reusing extra heat and waste power from one site to help another site.");       
+      ?>
+      <div class="row-fluid">
+	      <div class="span9">      
+		      
+	        <?php foreach ($data as $item) { ?>
+	          <div class="row-fluid solution" style="margin-bottom: 10px">	         
+	          	           
+	            <div class="span3" style="padding: 10px">        
+							  <img width="70" height="70" src="../img/challengeEC.png" align="middle" >
+							</div>
+							<div class="span9">
+							<div class="pull-right">
+			            Created: <?php echo $item['created_on'] ?>
+			            &nbsp;
+			            Updated: <?php echo $item['updated_on'] ?>			           
+			          </div>
+			          
+			          <h4><?php echo $item['title'] ?></h4>			         			          
+			          <p><?php echo $item['description'] ?></p>
+			        </div><!--/span-->
+			      </div><!-- /row -->			       
+		      <?php } ?>	        
+	        
+        </div><!--/span-->
+	    </div><!-- /row -->  
 
       <hr>
 

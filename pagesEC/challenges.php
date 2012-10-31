@@ -20,9 +20,15 @@
       body {
         padding-top: 40px;
         padding-bottom: 10px;
-      }    
+      } 
+      .page-header {
+        padding: 10px 10px 10px 10px;
+        margin: 0px 0px 10px 0px;
+        background: #EEEEEE;
+        border-radius: 10px 10px 10px 10px; 
+      }      
       .challenge {
-        background: #bba;
+        background: #6FC1D8;
         border-radius: 10px;
         height: 330px;
         padding: 10px;
@@ -100,66 +106,66 @@
 			  </div>
 			</div>	    
    
+      <?php $data = array();
+        $data['1'] = array("id" => 1, "title" => "SAP Challenge", 'startDate' => "09/18/12", 'endDate' => '12/13/12',
+        		'entries' => 15,
+        		"description" => "SAP and NASA announce a challenge to support green technology with
+		              funding of up to $40,000.  Judges are from NASA research projects
+		              and SAP's green team");
+        $data['2'] = array("id" => 2, "title" => "Intel Foundation", 'startDate' => "10/10/12", 'endDate' => '12/13/12',
+        		'entries' => 11,
+        		"description" => "Welcome to a collaborative competition where social entrepreneurs enter 
+		           their ideas and programs to gain funding and support.  This challenge supports
+		           technology, women, and society");
+        $data['3'] = array("id" => 3, "title" => "Skoll Foundation", 'startDate' => "10/15/12", 'endDate' => '12/13/12',
+        		'entries' => 27,
+        		"description" => "Results for Development, with support from the Skoll Foundation, 
+		            is exploring innovative models for skills delivery at the 
+		            secondary school level in Africa and Asia.");     
+        $data['4'] = array("id" => 4, "title" => "Hackerdojo", 'startDate' => "04/01/12", 'endDate' => '04/01/13',
+        		'entries' => 43,
+        		"description" => "Creating a better life for all hackers, with free high-speed
+        		  network access and free storage for all.");
+        $data['5'] = array("id" => 5, "title" => "Menlo School", 'startDate' => "11/01/12", 'endDate' => '01/01/13',
+        		'entries' => 3,
+        		"description" => "The Menlo Foundation provides financial aid programs
+        		  for distinguished students, and a college-prep educational
+        		  experience.");
+      ?>
+          
       <div class="row-fluid">
 	      <div class="span9">      
-		      <div class="hero-unit">
+		      <div class="page-header">
 		         <h2>Challenges</h2>
 		         <p>
 		           These can be a powerful catalyst for innovation as products and processes 
 		           are optimized or	completely re-imagined.
 		         </p>      
 		      </div>
-	        <div class="row-fluid">
-            <div class="span4 challenge">           
-						  <img width="100" height="100" src="../img/challengeEC.png" align="middle" >
-		          <h2>SAP Challenge</h2>
-		          <p>
-		              SAP and NASA announce a challenge to support green technology with
-		              funding of up to $40,000.  Judges are from NASA research projects
-		              and SAP's green team. 
-		          </p>
-		          <div>
-		            Start: 7/01/12
-		            <br/>
-		            End: 11/30/12
-		            <br/>
-		            22 entries
-		          </div>
-		        </div><!--/span-->
-	        
-	          <div class="span4 challenge">
-	            <img width="100" height="100" src="../img/challengeEC.png" align="middle" >
-	            <h2>Intel Challenge</h2>
-	            <p>
-		           Welcome to a collaborative competition where social entrepreneurs enter 
-		           their ideas and programs to gain funding and support.  This challenge supports
-		           technology, women, and society.
-		          </p>
-		          <div>
-		            Start: 9/01/12
-		            <br/>
-		            End: 12/31/12
-		            <br/>
-		            15 entries
-		          </div>
-	          </div><!--/span-->
-	        
-	          <div class="span4 challenge">
-	            <img width="100" height="100" src="../img/challengeEC.png" align="middle" >
-	            <h2>Skoll Foundation</h2>
-	            <p>
-		            Results for Development, with support from the Skoll Foundation, 
-		            is exploring innovative models for skills delivery at the 
-		            secondary school level in Africa and Asia.
-		          </p>
-		          <div>
-		            Start: 11/01/12
-		            <br/>
-		            End: 11/30/12
-		            <br/>
-		            53 entries
-		          </div>
-	          </div><!--/span-->
+	        <div class="row-fluid" style="margin-bottom: 10px">
+	          <?php $count = 0; ?>
+	          <?php foreach ($data as $item) { ?>
+	          
+	            <?php /* Create a new row if needed, on count = 3, 6, 9, ... */ ?>
+              <?php if ($count > 0 && $count%3==0) { echo "</div>"; } ?>
+              <?php if ($count > 0 && $count%3==0) { echo "<div class='row-fluid' style='margin-bottom: 10px'>"; } ?>
+      
+	            <div class="span4 challenge">           
+							  <img width="120" height="120" src="../img/challengeEC.png" align="middle" >
+			          <h4><?php echo $item['title'] ?></h4>
+			          <p><?php echo $item['description'] ?></p>
+			          <div class="pull-left">
+			            Start: <?php echo $item['startDate'] ?>
+			          </div>
+			          <div class="pull-right">
+			            End: <?php echo $item['endDate'] ?>
+			          </div>
+			          <div style="clear:both"></div>
+			          <div style="line-height: 5px; background:red; padding: 0px; margin: 2px 0px 2px 0px; height: 10px"></div>
+			          <?php echo $item['entries'] ?> entries
+			        </div><!--/span-->
+			        <?php $count++; ?>   
+		        <?php } ?>	        
 	        </div><!-- /row -->
         </div><!--/span-->
 	    </div><!-- /row -->
