@@ -133,10 +133,10 @@
 	     
 	      <div class="span9">	
 	        <div class="btn-group" data-toggle="buttons-radio">
-    <button  class="btn" id="btn_table">View table only</button>
-    <button  class="btn" id="btn_pic">View picture grid only </button>
-    <button  class="btn" id="btn_full">View full </button>
-    </div>	   
+				    <button class="btn" id="btn_table">View table only</button>
+				    <button class="btn" id="btn_pic">View picture grid only</button>
+				    <button class="btn" id="btn_full">View full</button>
+			    </div>	   
 		     	<div>
 		        <h4>Featured Product / Editor's Pick</h4>
 		        <div id="myCarousel" class="carousel slide" >

@@ -253,7 +253,7 @@
         </div><!--/span-->
 	    </div><!-- /row -->
 	     
-      <hr>
+      <hr/>
 
       <footer>      
        <div class="row">
