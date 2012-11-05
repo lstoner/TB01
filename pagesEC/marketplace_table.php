@@ -153,13 +153,41 @@ hr {
 				</div>
 
 				<?php $products = array();
-				$products['1'] = array("id"=>1,"title" => "Tesla Model S", 'updated_on' => "2012/09/21", "description" => "All-Electric sedan");
-				$products['2'] = array("id"=>2,"title" => "Harrel Remodeling", 'updated_on' => "2012/07/19", "description" => "Rebuilding with green in mind");
-				$products['3'] = array("id"=>3,"title" => "R-80 Microinverter", 'updated_on' => "2012/10/15", "description" => "Microinverter for solar panel");
-				$products['4'] = array("id"=>4,"title" => "Vantage Data Centers", 'updated_on' => "2012/06/21", "description" => "Green Data Centers");
-				$products['5'] = array("id"=>5,"title" => "Silver Spring Networks", 'updated_on' => "2012/09/22", "description" => "Smart metering for the Smart Grid");
+				$products['1'] = array("id"=>1,"title" => "Tesla Model S", 'updated_on' => "2012/09/21", "description" => "All-Electric sedan","organization"=>"Symantec");
+				$products['2'] = array("id"=>2,"title" => "Harrel Remodeling", 'updated_on' => "2012/07/19", "description" => "Rebuilding with green in mind","organization"=>"ebay");
+				$products['3'] = array("id"=>3,"title" => "R-80 Microinverter", 'updated_on' => "2012/10/15", "description" => "Microinverter for solar panel","organization"=>"Sunflower Systems");
+				$products['4'] = array("id"=>4,"title" => "Vantage Data Centers", 'updated_on' => "2012/06/21", "description" => "Green Data Centers","organization"=>"ebay");
+				$products['5'] = array("id"=>5,"title" => "Silver Spring Networks", 'updated_on' => "2012/09/22", "description" => "Smart metering for the Smart Grid","organization"=>"Silver Spring Networks");
+				$products['6'] = array("id"=>5,"title" => "Living rainwater tasks ", 'updated_on' => "2012/09/22", "description" => "sizes of 1Gallon to 5Gallon. Liner of 18 gauge galvaninzed metal ","organization"=>"Unspecified/Other");
 				?>
-
+				<br>
+				 <table class="table table-striped">
+						 	<legend> Table View</legend>
+		 		<thead>
+		       <tr>
+		        <th>Title</th>
+		        <th>Organization/Company</th>
+		        <th>created_on</th>   
+		        <th>Url</th>   
+		       </tr>
+      		 </thead>
+   				
+   				
+   				 <?php foreach ($products as $product) { 
+   				 	echo "<tr>";
+    				 	echo "<td>".$product['title']."</td>";
+    				 	echo "<td>".$product['organization']."</td>";
+						echo "<td>".$product['updated_on']."</td>";
+					    echo "<td></td>";
+   				 	echo "</tr>";
+   				 	
+   				 	
+   				 }?>
+   
+   
+   	
+				  </table>
+				
 
 			</div>
 			<!--/span-->
