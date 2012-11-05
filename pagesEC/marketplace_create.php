@@ -5,7 +5,7 @@
     <title>Twitter Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Linghua Jin">
+    <meta name="author" content="Jeff Risberg">
   
     <link href="../css/bootstrap.css" rel="stylesheet">   
     <link href="../css/bootstrap-responsive.css" rel="stylesheet">
@@ -20,10 +20,33 @@
       body {
         padding-top: 40px;
         padding-bottom: 10px;
-      }
+      }  
       hr { 
         height: 3px; color: #888 !important; background-color: #888 !important;
-      }     
+      }   
+      .post {  
+        padding-bottom: 4px; 
+        border-bottom: 1px solid #888;    
+        margin-bottom: 15px;
+      }
+      .post .title a {
+        font-size: 17px;
+        font-weight: bold;
+        color: #333;        
+        text-decoration: none;
+      }
+      .post .metadata {
+        font-size: 14px;
+        font-style: italic;
+        font-family:  "Times New Roman", serif;
+      }
+      .post .excerpt {
+        color: #333;
+      }
+      .post .categories {
+        margin-top: 6px;
+        font-size: 14px;
+      }
       .widget > div {       
         padding: 3px 5px 3px 5px;             
         background-color: #f9f9f9;  
@@ -56,7 +79,7 @@
         background-color: #33a9c8;
       }
     </style>    
- 
+
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -112,10 +135,10 @@
 			          </li>
 			          <li class="divider-vertical"></li>
 			          <li class="dropdown">
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solution <b class="caret"></b></a>
+			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions <b class="caret"></b></a>
 			            <ul class="dropdown-menu">
-			              <li><a href="#">contribute</a></li>
-			              <li><a href="#">find</a></li>
+			              <li><a href="#">Contribute</a></li>
+			              <li><a href="#">Find</a></li>
 			            </ul>
 			          </li>
 			          <li class="divider-vertical"></li>
@@ -126,143 +149,79 @@
 			      </div>
 			    </div>
 			  </div>
-			</div>	    
-   
-      <div class="row-fluid">	       
-	      <div class="span3">
+			</div>	       
+      
+      <div class="row-fluid">
+	      <div class="span9">      		    
+		    <form action="">
+		      <table>
+		       <tr>
+		        <td>Title</td>
+		        <td><input name="title" size="50" style="width: 590px" /></td>		       
+		       </tr>
+		       <tr>
+		        <td>Body</td>
+		        <td><textarea name="body" style="width: 590px; height: 250px"></textarea></td>	       
+		       </tr>
+		       <tr>
+		        <td>Image</td>
+		        <td><input type="file" name="image" />
+		       </tr>
+		       <tr>
+		        <td>Organization</td>
+		        <td><select name="org">
+		          <option>Adobe</option>
+		          <option>Intuit</option>
+		          <option>eBay</option>
+		          <option>Aussie Rain Tanks</option>
+		        </select></td>
+		       </tr>
+		       <tr>
+		        <td>&nbsp;</td>
+		        <td><input type="submit" value="Submit Product"></td>
+		       </tr>
+		      </table>		      
+		    </form>  	              	       
+        </div><!--/span-->
+        
+        <div class="span3">       
 			    <div class="widget w1">
 			      <div class="title">Resources</div>	          
-			      <div class="post">Energy</div>
-		        <div class="post">Information</div>
-		        <div class="post">Materials</div> 
-		        <div class="post">Water</div>  	                    
+			      <div class="category">Energy (3)</div>
+		        <div class="category">Information (5)</div>
+		        <div class="category">Materials (3)</div> 
+		        <div class="category">Water (12)</div>  	                    
 			    </div>
 			        
 			    <div class="widget w2">
 			      <div class="title">Industry</div>	         
-			      <div class="event">Education</div>	     
-			      <div class="event">Finance/Insurance/Investment</div>   
-		        <div class="event">Food/Agriculture</div>    	            
+			      <div class="category">Education (7)</div>	     
+			      <div class="category">Finance/Insurance/Investment (11)</div>   
+		        <div class="category">Food/Agriculture (3)</div>    	            
 			    </div>
 			       
 			    <div class="widget w3">
 		        <div class="title">Planetary System</div>            
-		        <div class="activity">Air Quality Regulation</div>
-		        <div class="activity">Soil Vitality, Erosion & Chemical Pollution Control</div>
-		        <div class="activity">Energy Capture, Transport, Storage</div>
-		        <div class="activity">Radiation Protection</div>                      
+		        <div class="category">Air Quality Regulation (2)</div>
+		        <div class="category">Soil Vitality, Erosion & Chemical Pollution Control (1)</div>
+		        <div class="category">Energy Capture, Transport, Storage (6)</div>
+		        <div class="category">Radiation Protection (4)</div>                      
 		      </div>		           	       	    
-		    </div><!--/span3-->
-	      
-	      <div class="span9">		   
-		     	<div>
-		        <h4>Featured Product / Editor's Pick</h4>
-		        <div id="myCarousel" class="carousel slide" >
-					     <!-- Carousel items -->
-					     <div class="carousel-inner">
-					       <div class="active item">
-					         <img width="400" height="100" src="../img/carousel-image-04.jpg" class="img-rounded">
-					       </div>
-					       <div class="item">
-					         <img width="400" height="100" src="../img/carousel-image-05.jpg" class="img-rounded">
-					       </div>
-					       <div class="item">
-					         <img width="400" height="100" src="../img/carousel-image-06.jpg" class="img-rounded">
-					       </div>
-					     </div>
-					     <!-- Carousel nav -->
-					     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-					     <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-					  </div>				      
-		      </div>
-		     
-		      <Legend>Your most recently viewed products | View more...</Legend>          
-        
-          <?php $data = array();
-            $data['1'] = array("id"=>1,"title" => "Concentrator PV Panel", 'updated_on' => "2012/09/18", "description" => "High-eff industrial solar panel");
-            $data['2'] = array("id"=>2,"title" => "M2 Renewables", 'updated_on' => "2012/10/10", "description" => "Municipal waste recycling systems");
-            $data['3'] = array("id"=>3,"title" => "Rainwater Tanks", 'updated_on' => "2012/10/15", "description" => "Collector system for households");            
-          ?>
-          
-          <?php if ($data) { ?>	                       
-            <?php $count=0;?>
-            <div class="row-fluid" style="margin-bottom: 10px">
-    
-              <?php foreach ($data as $product) { ?>
-        
-                <?php /* Create a new row if needed, on count = 3, 6, 9, ... */ ?>
-                <?php if ($count > 0 && $count%3==0) { echo "</div>"; } ?>
-                <?php if ($count > 0 && $count%3==0) { echo "<div class='row-fluid' style='margin-bottom: 10px'>"; } ?>
-      
-                <div class="span4">
-                    <a href="<?php echo'view/'.$product['id']?>">  
-                      <img width="100" height="100" src="../img/challengeEC.png" align="middle" >
-                  </a>
-                  <div style="font-size: 16px; font-weight: bold;">
-                      <a href="<?php echo'view/'.$product['id']?>">
-                         <?php echo $product['title']; ?>
-                      </a>
-                  </div>
-  
-                  <?php echo $product['updated_on'] > 0 ? $product['updated_on'] : ""; ?>
-                    
-                  <div><?php echo $product['description'] ?> </div>
-                </div><!-- span4 -->
-                <?php $count++; ?>                    
-              <?php } ?>  
-            </div>   
-          <?php } ?>
-           
-          <?php $products = array();
-            $products['1'] = array("id"=>1,"title" => "Tesla Model S", 'updated_on' => "2012/09/21", "description" => "All-Electric sedan");
-            $products['2'] = array("id"=>2,"title" => "Harrel Remodeling", 'updated_on' => "2012/07/19", "description" => "Rebuilding with green in mind");
-            $products['3'] = array("id"=>3,"title" => "R-80 Microinverter", 'updated_on' => "2012/10/15", "description" => "Microinverter for solar panel");
-            $products['4'] = array("id"=>4,"title" => "Vantage Data Centers", 'updated_on' => "2012/06/21", "description" => "Green Data Centers");
-            $products['5'] = array("id"=>5,"title" => "Silver Spring Networks", 'updated_on' => "2012/09/22", "description" => "Smart metering for the Smart Grid");
-          ?>        
-           
-          <Legend>Products you might be interested in:</Legend>
-        
-          <?php if ($products) { ?>	 
-            <?php $count=0;?>
-            <div class="row-fluid" style="margin-bottom: 10px">
-    
-              <?php foreach ($products as $product) { ?>
-        
-                <?php /* Create a new row if needed, on count = 3, 6, 9, ... */ ?>
-                <?php if ($count > 0 && $count%3==0) { echo "</div>"; } ?>
-                <?php if ($count > 0 && $count%3==0) { echo "<div class='row-fluid' style='margin-bottom: 10px'>"; } ?>
-      
-                <div class="span4">
-                  <a href="<?php echo'view/'.$product['id']?>">  <img width="100" height="100" src="../img/challengeEC.png" align="middle" ></a>
-                  <div style="font-size: 16px; font-weight: bold;">
-                    <a href="<?php echo'view/'.$product['id']?>">
-                     <?php echo $product['title']; ?>
-                     </a>
-                  </div>
-  
-                  <?php echo $product['updated_on'] > 0 ? $product['updated_on'] : ""; ?>
-                    
-                  <div><?php echo $product['description'] ?> </div>
-                </div><!-- span4 -->
-                <?php $count++; ?>                    
-              <?php } ?>  
-            </div>           
-          <?php } ?>
-                     
-        </div><!--/span-->
-	    </div><!-- /row -->
-	     
-      <hr>
+		    </div><!--/span3-->       
+	    </div><!-- /row -->  
+
+      <hr/>
 
       <footer>      
        <div class="row">
-        <div class="span6">
-          <p>&copy; 2012 Sustainable Silicon Valley</p>
-        </div>
-        <div class="span6" style="text-align: right">
-          <p>All Rights Reserved</p>
-        </div>
+         <div class="span12">
+           <div class="pull-left">
+             &copy; 2010 - 2012 by Sustainable Silicon Valley. All Rights Reserved.
+           </div>
+           <div class="pull-right">        
+             About Us | Sign Up for Newsletter | Donate | Contact Us | Help | Terms of Service
+           </div>
+         </div>
        </div>    
       </footer>
 
@@ -270,3 +229,4 @@
     
   </body>
 </html>
+ 
