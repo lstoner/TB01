@@ -156,20 +156,20 @@
 		    <form action="../pagesEC/blog_post_create2.php">
 		      <table>
 		       <tr>
-		        <td>Title</td>
+		        <td>Title *</td>
 		        <td><input name="title" size="50" style="width: 590px" /></td>		       
 		       </tr>
 		       <tr>
-		        <td>Body</td>
+		        <td>Body *</td>
 		        <td><textarea name="body" style="width: 590px; height: 250px"></textarea></td>	       
 		       </tr>
 		       <tr>
-		        <td>Excerpt</td>
-		        <td><textarea name="excerpt" style="width: 590px; height: 180px"></textarea></td>
+		        <td>Excerpt<br/>(optional)</td>
+		        <td><textarea name="excerpt" style="width: 590px; height: 100px"></textarea></td>
 		       </tr>
 		       <tr>
 		        <td>&nbsp;</td>
-		        <td><input type="submit" value="Submit Post"></td>
+		        <td><input type="submit" value="Next"></td>
 		       </tr>
 		      </table>		      
 		    </form>  	              	       
