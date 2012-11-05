@@ -11,7 +11,7 @@
     <link href="../css/bootstrap.css" rel="stylesheet">   
     <link href="../css/bootstrap-responsive.css" rel="stylesheet">
     
-    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/jquery-1.8.2.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/less-1.3.0.min.js"></script>
     
