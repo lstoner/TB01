@@ -238,25 +238,25 @@
         <div class="span3">       
 			    <div class="widget w1">
 			      <div class="title">Resources</div>	          
-			      <div class="post">Energy (3)</div>
-		        <div class="post">Information (5)</div>
-		        <div class="post">Materials (3)</div> 
-		        <div class="post">Water (12)</div>  	                    
+			      <div class="category">Energy (3)</div>
+		        <div class="category">Information (5)</div>
+		        <div class="category">Materials (3)</div> 
+		        <div class="category">Water (12)</div>  	                    
 			    </div>
 			        
 			    <div class="widget w2">
 			      <div class="title">Industry</div>	         
-			      <div class="event">Education (7)</div>	     
-			      <div class="event">Finance/Insurance/Investment (11)</div>   
-		        <div class="event">Food/Agriculture (3)</div>    	            
+			      <div class="category">Education (7)</div>	     
+			      <div class="category">Finance/Insurance/Investment (11)</div>   
+		        <div class="category">Food/Agriculture (3)</div>    	            
 			    </div>
 			       
 			    <div class="widget w3">
 		        <div class="title">Planetary System</div>            
-		        <div class="activity">Air Quality Regulation (2)</div>
-		        <div class="activity">Soil Vitality, Erosion & Chemical Pollution Control (1)</div>
-		        <div class="activity">Energy Capture, Transport, Storage (6)</div>
-		        <div class="activity">Radiation Protection (4)</div>                      
+		        <div class="category">Air Quality Regulation (2)</div>
+		        <div class="category">Soil Vitality, Erosion & Chemical Pollution Control (1)</div>
+		        <div class="category">Energy Capture, Transport, Storage (6)</div>
+		        <div class="category">Radiation Protection (4)</div>                      
 		      </div>		           	       	    
 		    </div><!--/span3-->       
 	    </div><!-- /row -->  
