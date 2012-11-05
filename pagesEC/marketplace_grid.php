@@ -147,7 +147,7 @@
             $products['3'] = array("id"=>3,"title" => "R-80 Microinverter", 'updated_on' => "2012/10/15", "description" => "Microinverter for solar panel");
             $products['4'] = array("id"=>4,"title" => "Vantage Data Centers", 'updated_on' => "2012/06/21", "description" => "Green Data Centers");
             $products['5'] = array("id"=>5,"title" => "Silver Spring Networks", 'updated_on' => "2012/09/22", "description" => "Smart metering for the Smart Grid");
-            $products['6'] = array("id"=>5,"title" => "Living rainwater tasks ", 'updated_on' => "2012/09/22", "description" => "sizes of 1Gallon to 5Gallon. Liner of 18 gauge galvaninzed metal ");
+            $products['6'] = array("id"=>5,"title" => "Living rainwater tanks ", 'updated_on' => "2012/09/22", "description" => "sizes of 1Gallon to 5Gallon. Liner of 18 gauge galvaninzed metal ");
           ?>        
            
           <Legend> <h4>View product in cataloge with pictures</h4></Legend>
