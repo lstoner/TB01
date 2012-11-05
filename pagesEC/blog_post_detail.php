@@ -14,6 +14,8 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/less-1.3.0.min.js"></script>
     
+    <script src="../js/jquery.raty.min.js"></script>
+     
     <link href="../css/stylesEC.less" rel="stylesheet">
     
     <style type="text/css">
@@ -46,6 +48,11 @@
       .post .categories {
         margin-top: 6px;
         font-size: 14px;
+      }
+      .post .comments .comment {
+        font-size: 14px;
+        font-style: italic;
+        border-bottom: 1px solid #888;
       }
       .widget > div {       
         padding: 3px 5px 3px 5px;             
@@ -158,6 +165,8 @@
         		"changed all of the irrigation to use the recovered water.  This enables me to save over 30% " .
         		"from my standard usage, lorem ipsum sumra ergo technology and economic benefit.",
         		"categories" => array("Water", "Recycling", "Consumer"),
+        		"numComments" => 4,
+        		"rating" => 5,
         		"author" => "Tom Smith",
         		"body" =>
         		"<p>In my house I have installed water recovery units in the sink and bathroom, and have " .
@@ -183,7 +192,11 @@
 	            }
 	          ?>
 	          <div class="post">	         
-	          	           	            							
+	          	   
+	          	<div class="pull-right">
+	          	  <a class="btn">Edit</a>
+	          	  <a class="btn">Delete</a>
+	          	</div>        	            							
 						  <div class="title"><a href=""><?php echo $item['title'] ?></a></div>
 		          <div class="metadata">
 						    Posted by <a href=""><?php echo $item['author'] ?></a> on <?php echo $item['created_on'] ?>
@@ -194,12 +207,46 @@
 		          <div class="categories">
 		            Posted in 
 		            <?php echo join(", ", $categoryLinks); ?>
-		          </div>	      
+		          </div>	
+		          <div class="comments">
+		            <?php echo $item['numComments'] ?> comment<?php echo $item['numComments'] != 1 ? "s" : "" ?>
+		            <div class="pull-right">
+		              Rating: <span id="r<?php echo $item['id'] ?>"></span>
+		              <script>
+		              $(function() {			              
+		                $('#r<?php echo $item['id'] ?>').raty({ path: "../img/", readOnly	: true,	score	: <?php echo $item['rating'] ?>	});		              
+		              });
+					        </script>
+		            </div>
+		            <div class="comment">Bob said: I like this idea</div>
+		            <div class="comment">Tom said: Would this work for me?</div>
+		            <div class="comment">Sally said: What is the level of efficiency that you are getting?</div>
+		            <div class="comment">Mary said: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>		           
+		          </div>
+		          <div>
+		            My rating: <span id="m<?php echo $item['id'] ?>"></span>
+		            <script>
+		              $(function() {			              
+		                $('#m<?php echo $item['id'] ?>').raty({ path: "../img/", score	: <?php echo $item['rating'] ?>	});		              
+		              });
+					        </script>
+		          </div>
+		          <div><a href="">Add Comment</a></div>   
+		          <form>
+		          
+		            Comment: <textarea style="width: 590px; height: 100px"></textarea>
+		            <br>
+		            <input type="submit" value="Submit Comment" />
+		          </form>   
 			      </div>	       
 		      <?php } ?>	        	       
         </div><!--/span-->
         
-        <div class="span3">       
+        <div class="span3">
+         <div class="commands">
+            <a href="../pagesEC/blog_post_create.php" class="btn">Create New Post</a>
+          </div>
+                
 			    <div class="widget w1">
 			      <div class="title">Resources</div>	          
 			      <div class="category">Energy (3)</div>

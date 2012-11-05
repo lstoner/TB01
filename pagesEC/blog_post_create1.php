@@ -149,54 +149,30 @@
 			      </div>
 			    </div>
 			  </div>
-			</div>	    
-   
-      <?php $data = array();
-        $data['1'] = array("id" => 1, "title" => "Why I am recycling water", 'created_on' => "11/03/12", 'updated_on' => '12/13/12',
-        		"excerpt" => 
-        		"In my house I have installed water recovery units in the sink and bathroom, and have " .
-        		"changed all of the irrigation to use the recovered water.  This enables me to save over 30% " .
-        		"from my standard usage, lorem ipsum sumra ergo technology and economic benefit.",
-        		"categories" => array("Water", "Recycling", "Consumer"),
-        		"author" => "Tom Smith",
-        		"body" =>
-        		"<p>In my house I have installed water recovery units in the sink and bathroom, and have " .
-        		"changed all of the irrigation to use the recovered water.  This enables me to save over 30% " .
-        		"from my standard usage, lorem ipsum sumra ergo technology and economic benefit.</p>" .
-        		"<p>I'm using a simple design is easy to use with any portable recycle unit to give a true " .
-        		"'closed loop' system with zero discharge to storm drains. The disc is convenient " .
-        		"for water extraction in even confined or hard to get to areas.</p>" .
-        		"<p>The unit's powerful two stage motor mounted on top of a heavy duty fifty gallon poly tank " .
-        		"boasts a full 100 inches of water lift. A separate discharge pump can evacuate the water for " .
-        		"recycling at the rate of up to 20 gallons per minute. The disc makes it convenient " .
-        		"for water extraction in even confined or hard to get to areas.</p>",
-      ?>
+			</div>	       
       
       <div class="row-fluid">
-	      <div class="span9">      
-		      
-	        <?php foreach ($data as $item) { ?>
-	          
-	          <?php $categoryLinks = array();
-	            foreach ($item['categories'] as $category) {
-	            	$categoryLinks[] = '<a href="">'.$category.'</a>';
-	            }
-	          ?>
-	          <div class="post">	         
-	          	           	            							
-						  <div class="title"><a href=""><?php echo $item['title'] ?></a></div>
-		          <div class="metadata">
-						    Posted by <a href=""><?php echo $item['author'] ?></a> on <?php echo $item['created_on'] ?>
-						  </div>			         			          			         		          
-		          <div class="body">
-		            <?php echo $item['body'] ?>		            
-		          </div>		
-		          <div class="categories">
-		            Posted in 
-		            <?php echo join(", ", $categoryLinks); ?>
-		          </div>	      
-			      </div>	       
-		      <?php } ?>	        	       
+	      <div class="span9">      		    
+		    <form action="../pagesEC/blog_post_create2.php">
+		      <table>
+		       <tr>
+		        <td>Title</td>
+		        <td><input name="title" size="50" style="width: 590px" /></td>		       
+		       </tr>
+		       <tr>
+		        <td>Body</td>
+		        <td><textarea name="body" style="width: 590px; height: 250px"></textarea></td>	       
+		       </tr>
+		       <tr>
+		        <td>Excerpt</td>
+		        <td><textarea name="excerpt" style="width: 590px; height: 180px"></textarea></td>
+		       </tr>
+		       <tr>
+		        <td>&nbsp;</td>
+		        <td><input type="submit" value="Submit Post"></td>
+		       </tr>
+		      </table>		      
+		    </form>  	              	       
         </div><!--/span-->
         
         <div class="span3">       
