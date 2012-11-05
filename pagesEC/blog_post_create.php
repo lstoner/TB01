@@ -158,58 +158,25 @@
         		"changed all of the irrigation to use the recovered water.  This enables me to save over 30% " .
         		"from my standard usage, lorem ipsum sumra ergo technology and economic benefit.",
         		"categories" => array("Water", "Recycling", "Consumer"),
-        		"author" => "Tom Smith");
-        $data['2'] = array("id" => 2, "title" => "Tesla Model S now shipping", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
-        		"excerpt" => 
-        		"The morning after Tesla Motors unveiled its plan to build Superchargers, the electric " .
-        		"car company also quietly cut the forecasts for the short term production of its second " .
-        		"electric car the Model S, as well as its yearly revenue guidance. Tesla says it has " .
-        		"'increased our Model S production at a rate slower than we had earlier anticipated, and " .
-        		" thus are “approximately four to five weeks behind our previously announced Model S " .
-        		"delivery goals as of the end of 2012.",
-        		"categories" => array("Transportation", "Electric"),
-        		"author" => "John Jarvis");
-        $data['3'] = array("id" => 3, "title" => "Adobe Systems wins green awards", 'created_on' => "10/10/12", 'updated_on' => '12/13/12',
-        		"excerpt" => 
-        		"Adobe Systems Incorporated (Nasdaq:ADBE) today announced the U.S. Green Building Council " .
-        		"(USGBC) has awarded a Leadership in Energy and Environmental Design (LEED�) Platinum " .
-        		"certification for Adobe's West Tower headquarters building in downtown San Jose. The Adobe " .
-        		"tower is the world's first commercial office building to earn this highest recognition " .
-        		"possible for energy and environmental design excellence under the USGBC's permanent LEED " .
-        		"Existing Building (LEED-EB) standard",
-        		"categories" => array("Industry", "Sustainability", "Waste Reduction"),
-        		"author" => "Marianna Grossman");     
-        $data['4'] = array("id" => 4, "title" => "Report from Green Conference '12", 'created_on' => "09/23/12", 'updated_on' => '04/01/13',
-        		"excerpt" => 
-        		"The NAHB Green conference is being held this week (April 29 to May 1, 2012) in Nashville, " .
-        		"Tennessee. Several GBA employees and bloggers — including Dan Morrison, Michael Chandler, " .
-        		"Peter Yost, Ted Clifton, and me — are attending.",
-        		"categories" => array("Sustainability"),        		
-        		"author" => "Ursula Syrova");   
-        $data['5'] = array("id" => 5, "title" => "NASA Showcase now open", 'created_on' => "09/01/12", 'updated_on' => '04/01/13',
-        		"excerpt" => 
-        		"NASA Technology Days, a three-day public technology showcase, will take place at the " .
-        		"Cleveland Public Auditorium and Conference Center Nov. 28-30. The space technology " .
-        		"showcase will bring together stakeholders from industry, academia and the U.S. government " .
-        		"to engage in strategy development, partnership building and methods of fostering technology " .
-        		"transfer and innovation",
-        		"categories" => array("Planetary", "Sustainablity", "Innovation", "Government"),
-        		"author" => "Bill Yost");
+        		"author" => "Tom Smith",
+        		"body" =>
+        		"<p>In my house I have installed water recovery units in the sink and bathroom, and have " .
+        		"changed all of the irrigation to use the recovered water.  This enables me to save over 30% " .
+        		"from my standard usage, lorem ipsum sumra ergo technology and economic benefit.</p>" .
+        		"<p>I'm using a simple design is easy to use with any portable recycle unit to give a true " .
+        		"'closed loop' system with zero discharge to storm drains. The disc is convenient " .
+        		"for water extraction in even confined or hard to get to areas.</p>" .
+        		"<p>The unit's powerful two stage motor mounted on top of a heavy duty fifty gallon poly tank " .
+        		"boasts a full 100 inches of water lift. A separate discharge pump can evacuate the water for " .
+        		"recycling at the rate of up to 20 gallons per minute. The disc makes it convenient " .
+        		"for water extraction in even confined or hard to get to areas.</p>",
       ?>
       
       <div class="row-fluid">
 	      <div class="span9">      
 		      
 	        <?php foreach ($data as $item) { ?>
-	          <?php $moreNeeded = false;
-              $shortExcerpt = $item['excerpt'];
-			        if (strlen($shortExcerpt) > 250) {
-				        $shortExcerpt = substr($shortExcerpt, 0, 250);
-				        $index = strrpos($shortExcerpt, " ");
-				        $shortExcerpt = substr($shortExcerpt, 0, $index);
-				        $moreNeeded = true;
-			        }
-			      ?> 
+	          
 	          <?php $categoryLinks = array();
 	            foreach ($item['categories'] as $category) {
 	            	$categoryLinks[] = '<a href="">'.$category.'</a>';
@@ -221,11 +188,8 @@
 		          <div class="metadata">
 						    Posted by <a href=""><?php echo $item['author'] ?></a> on <?php echo $item['created_on'] ?>
 						  </div>			         			          			         		          
-		          <div class="excerpt">
-		            <?php echo $shortExcerpt ?>
-		            <?php if ($moreNeeded) { ?>
-		              <a href="">Read more</a>
-		            <?php } ?>
+		          <div class="body">
+		            <?php echo $item['body'] ?>		            
 		          </div>		
 		          <div class="categories">
 		            Posted in 
