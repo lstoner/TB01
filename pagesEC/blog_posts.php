@@ -158,19 +158,19 @@
         		"excerpt" => 
         		"In my house I have installed water recovery units in the sink and bathroom, and have " .
         		"changed all of the irrigation to use the recovered water.  This enables me to save over 30% " .
-        		"from my standard usage, lorem ipsum sumra ergo technology and economic benefit.",
-        		"numComments" => 2,
+        		"from my standard water usage, lorem ipsum sumra ergo technology and economic benefit.",
+        		"numComments" => 4,
         		"rating" => 5,
         		"categories" => array("Water", "Recycling", "Consumer"),
         		"author" => "Tom Smith");
-        $data['2'] = array("id" => 2, "title" => "Tesla Model S now shipping", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
+        $data['2'] = array("id" => 2, "title" => "Tesla Model S shipments are behind", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
         		"excerpt" => 
         		"The morning after Tesla Motors unveiled its plan to build Superchargers, the electric " .
         		"car company also quietly cut the forecasts for the short term production of its second " .
         		"electric car the Model S, as well as its yearly revenue guidance. Tesla says it has " .
-        		"'increased our Model S production at a rate slower than we had earlier anticipated, and " .
-        		" thus are “approximately four to five weeks behind our previously announced Model S " .
-        		"delivery goals as of the end of 2012.",
+        		"'increased our Model S production at a rate slower than we had earlier anticipated', and " .
+        		" thus are 'approximately four to five weeks behind our previously announced Model S " .
+        		"delivery goals as of the end of 2012'.",
         		"numComments" => 1,
         		"rating" => 1,
         		"categories" => array("Transportation", "Electric"),
@@ -178,7 +178,7 @@
         $data['3'] = array("id" => 3, "title" => "Adobe Systems wins green awards", 'created_on' => "10/10/12", 'updated_on' => '12/13/12',
         		"excerpt" => 
         		"Adobe Systems Incorporated (Nasdaq:ADBE) today announced the U.S. Green Building Council " .
-        		"(USGBC) has awarded a Leadership in Energy and Environmental Design (LEED�) Platinum " .
+        		"(USGBC) has awarded a Leadership in Energy and Environmental Design (LEED) Platinum " .
         		"certification for Adobe's West Tower headquarters building in downtown San Jose. The Adobe " .
         		"tower is the world's first commercial office building to earn this highest recognition " .
         		"possible for energy and environmental design excellence under the USGBC's permanent LEED " .
@@ -229,7 +229,7 @@
 	          ?>
 	          <div class="post">	         
 	          	           	            							
-						  <div class="title"><a href=""><?php echo $item['title'] ?></a></div>
+						  <div class="title"><a href="../pagesEC/blog_post_detail.php"><?php echo $item['title'] ?></a></div>
 		          <div class="metadata">
 						    Posted by <a href=""><?php echo $item['author'] ?></a> on <?php echo $item['created_on'] ?>
 						  </div>			         			          			         		          

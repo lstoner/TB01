@@ -244,7 +244,7 @@
         
         <div class="span3">
          <div class="commands">
-            <a href="../pagesEC/blog_post_create.php" class="btn">Create New Post</a>
+            <a href="../pagesEC/blog_post_create1.php" class="btn">Create New Post</a>
           </div>
                 
 			    <div class="widget w1">
