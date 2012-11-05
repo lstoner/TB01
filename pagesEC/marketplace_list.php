@@ -128,32 +128,9 @@
 			  </div>
 			</div>	    
    
+      
       <div class="row-fluid">	       
-	      <div class="span3">
-			    <div class="widget w1">
-			      <div class="title">Resources</div>	          
-			      <div class="post">Energy</div>
-		        <div class="post">Information</div>
-		        <div class="post">Materials</div> 
-		        <div class="post">Water</div>  	                    
-			    </div>
-			        
-			    <div class="widget w2">
-			      <div class="title">Industry</div>	         
-			      <div class="event">Education</div>	     
-			      <div class="event">Finance/Insurance/Investment</div>   
-		        <div class="event">Food/Agriculture</div>    	            
-			    </div>
-			       
-			    <div class="widget w3">
-		        <div class="title">Planetary System</div>            
-		        <div class="activity">Air Quality Regulation</div>
-		        <div class="activity">Soil Vitality, Erosion & Chemical Pollution Control</div>
-		        <div class="activity">Energy Capture, Transport, Storage</div>
-		        <div class="activity">Radiation Protection</div>                      
-		      </div>		           	       	    
-		    </div><!--/span3-->
-	      
+	     
 	      <div class="span9">		   
 		     	<div>
 		        <h4>Featured Product / Editor's Pick</h4>
@@ -161,13 +138,13 @@
 					     <!-- Carousel items -->
 					     <div class="carousel-inner">
 					       <div class="active item">
-					         <img width="400" height="100" src="../img/carousel-image-04.jpg" class="img-rounded">
+					         <img width="400" height="100" src="../img/solar.jpg" class="img-rounded">
 					       </div>
 					       <div class="item">
-					         <img width="400" height="100" src="../img/carousel-image-05.jpg" class="img-rounded">
+					         <img width="400" height="100" src="../img/m2r.jpg" class="img-rounded">
 					       </div>
 					       <div class="item">
-					         <img width="400" height="100" src="../img/carousel-image-06.jpg" class="img-rounded">
+					         <img width="400" height="100" src="../img/telsa.jpg" class="img-rounded">
 					       </div>
 					     </div>
 					     <!-- Carousel nav -->
@@ -251,6 +228,31 @@
           <?php } ?>
                      
         </div><!--/span-->
+        
+           <div class="span3">       
+			    <div class="widget w1">
+			      <div class="title">Resources</div>	          
+			      <div class="category">Energy (3)</div>
+		        <div class="category">Information (5)</div>
+		        <div class="category">Materials (3)</div> 
+		        <div class="category">Water (12)</div>  	                    
+			    </div>
+			        
+			    <div class="widget w2">
+			      <div class="title">Industry</div>	         
+			      <div class="category">Education (7)</div>	     
+			      <div class="category">Finance/Insurance/Investment (11)</div>   
+		        <div class="category">Food/Agriculture (3)</div>    	            
+			    </div>
+			       
+			    <div class="widget w3">
+		        <div class="title">Planetary System</div>            
+		        <div class="category">Air Quality Regulation (2)</div>
+		        <div class="category">Soil Vitality, Erosion & Chemical Pollution Control (1)</div>
+		        <div class="category">Energy Capture, Transport, Storage (6)</div>
+		        <div class="category">Radiation Protection (4)</div>                      
+		      </div>		           	       	    
+		    </div><!--/span3-->   
 	    </div><!-- /row -->
 	     
       <hr>
