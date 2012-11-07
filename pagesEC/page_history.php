@@ -58,7 +58,7 @@
     <div class="container">
     
       <div style="margin-bottom: 10px">
-        <img width="900" height="100" src="img/ecocloud_header.png" />      
+        <img width="900" height="100" src="../img/ecocloud_header.png" />      
       </div>
     
       <div class="row-fluid">
@@ -144,7 +144,7 @@
                  'Older',
                  '6 Weeks ago',
                  '5 Weeks ago',
-                 '4 Week ago',
+                 '4 Weeks ago',
                  '3 Weeks ago',
                  '2 Weeks ago',
                  '1 Week ago',
