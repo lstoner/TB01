@@ -149,7 +149,7 @@
 					         <img width="400" height="100" src="../img/m2r.jpg" class="img-rounded">
 					       </div>
 					       <div class="item">
-					         <img width="400" height="100" src="../img/telsa.jpg" class="img-rounded">
+					         <img width="400" height="100" src="../img/tesla.jpg" class="img-rounded">
 					       </div>
 					     </div>
 					     <!-- Carousel nav -->
