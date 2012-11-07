@@ -33,6 +33,11 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    <script type="text/javascript">
+      // fix to get drop-downs working on iPad
+      $(document).on('touchstart.dropdown', '.dropdown-menu', function(e) { e.stopPropagation(); });
+    </script>
   
     <link rel="shortcut icon" href="../ico/favicon.ico">
   </head>
