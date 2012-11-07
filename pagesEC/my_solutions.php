@@ -101,36 +101,70 @@
 			  </div>
 			</div>	    
    
-      <?php $data = array();
-        $data['1'] = array("id" => 1, "title" => "Water Recycling", 'created_on' => "09/18/12", 'updated_on' => '12/13/12',
+      <?php
+        $base_url = ""; 
+        $solutions = array();
+        $solutions['1'] = array("id" => 1, "title" => "Water Recycling", 'created_on' => "09/18/12", 'updated_on' => '12/13/12',
         		"description" => "Water recycling can reduce the water consumption in every household");
-        $data['2'] = array("id" => 2, "title" => "Plasma-Arc Burning", 'created_on' => "10/10/12", 'updated_on' => '12/13/12',
+        $solutions['2'] = array("id" => 2, "title" => "Plasma-Arc Burning", 'created_on' => "10/10/12", 'updated_on' => '12/13/12',
         		"description" => "A plasma-arc is a new way to dispose of wastes, producing very little by-products");
-        $data['3'] = array("id" => 3, "title" => "Anaerobic Digesters", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
+        $solutions['3'] = array("id" => 3, "title" => "Anaerobic Digesters", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
         		"description" => "Anerobic digesters can actually produce energy from waste.");     
-        $data['4'] = array("id" => 4, "title" => "Cogeneration", 'created_on' => "04/01/12", 'updated_on' => '04/01/13',
+        $solutions['4'] = array("id" => 4, "title" => "Cogeneration", 'created_on' => "04/01/12", 'updated_on' => '04/01/13',
         		"description" => "Reusing extra heat and waste power from one site to help another site.");       
       ?>
       <div class="row-fluid">
 	      <div class="span9">      
 		      
-	        <?php foreach ($data as $item) { ?>
-	          <div class="row-fluid solution" style="margin-bottom: 10px">	         
-	          	           
-	            <div class="span3" style="padding: 10px">        
-							  <img width="70" height="70" src="../img/challengeEC.png" align="middle" >
-							</div>
-							<div class="span9">
-							<div class="pull-right">
-			            Created: <?php echo $item['created_on'] ?>
-			            &nbsp;
-			            Updated: <?php echo $item['updated_on'] ?>			           
-			          </div>
-			          
-			          <h4><?php echo $item['title'] ?></h4>			         			          
-			          <p><?php echo $item['description'] ?></p>
-			        </div><!--/span-->
-			      </div><!-- /row -->			       
+	        <?php foreach ($solutions as $solution) { ?>
+	          <div class="row-fluid" style="margin-bottom: 10px">              
+  <div class="span1">
+    <a href="<?php echo $base_url . 'solutions/view/'.$solution['id'] ?>">
+      <img src="../img/solution.png" width=120 height=130 />
+    </a>
+  </div>
+  
+  <div class="span11" style="background: #f5f5f5; padding: 5px; border-radius: 5px;">
+    <div class="span9">
+	    <div>	       
+          <span class="label label-success">Submitted</span>         
+                  
+          <span class="label label-info">In Showcase</span>
+                
+          <?php if ($solution['created_on'] > 0) { ?>
+            <span>
+              <?php echo "Entered " . $solution['created_on']; ?>
+            </span>
+          <?php } ?>
+          <?php if ($solution['updated_on'] > 0) { ?>
+            <span>
+              <?php echo "Updated " . $solution['updated_on']; ?>
+            </span>
+          <?php } ?>
+          </div>         
+          <div style="font-size: 16px; font-weight: bold;">
+            <a href="<?php echo $base_url . 'solution_view?id='.$solution['id']; ?>">
+              <?php echo $solution['title']; ?>
+            </a>
+          </div>                             
+          <div>
+            <?php echo $solution['description'] ?> 
+	        </div>
+      </div>
+      <div class="span2">          
+	          <div class="btn-group">
+	            <a class="btn" href="#"><i class="icon-leaf"></i> Action</a>
+	            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	             <li><a href="<?php echo $base_url . 'solution_view?id='.$solution['id'] ?>"><i class="icon-eye-open"></i>View</a></li>            
+               <li><a href="<?php echo $base_url . 'solution_edit?id='.$solution['id'] ?>"><i class="icon-pencil"></i>Edit/Submit</a></li>            
+               <li class="divider"></li>
+               <li><a href="<?php echo $base_url . 'solution_delete?id='.$solution['id'] ?>"><i class="icon-trash"></i>Delete</a></li>    
+	            </ul>
+	    </div>
+	  </div>
+  </div>
+</div>		       
 		      <?php } ?>	        
 	        
         </div><!--/span-->
