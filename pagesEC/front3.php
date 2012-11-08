@@ -87,7 +87,7 @@
     <div class="container" style="width: 1090px; background: #fff; box-shadow: 0px 0px 15px 15px #fff; padding: 0px 20px 0px 20px;">
     
       <div style="margin-bottom: 10px">
-        <img width="900" height="100" src="img/ecocloud_header.png" />      
+        <img width="900" height="100" src=".//img/ecocloud_header.png" />      
       </div>
     
       <div class="row-fluid">

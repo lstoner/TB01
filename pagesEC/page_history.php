@@ -5,7 +5,7 @@
     <title>Twitter Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Linghua Jin">
+    <meta name="author" content="Jeff Risberg">
   
     <link href="../css/bootstrap.css" rel="stylesheet">   
     <link href="../css/bootstrap-responsive.css" rel="stylesheet">
@@ -13,6 +13,7 @@
     <script src="../js/jquery-1.8.2.min.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/less-1.3.0.min.js"></script>
+    <script src="../js/highcharts.js"></script>
     
     <link href="../css/stylesEC.less" rel="stylesheet">
     
@@ -33,11 +34,6 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-    <script type="text/javascript">
-      // fix to get drop-downs working on iPad
-      $(document).on('touchstart.dropdown', '.dropdown-menu', function(e) { e.stopPropagation(); });
-    </script>
   
     <link rel="shortcut icon" href="../ico/favicon.ico">
   </head>
@@ -71,9 +67,9 @@
 			      <div class="navbar-inner">
 			        <a class="brand" href="#"></a>
 			        <ul class="nav">
-			          <li class="active"><a href="#">Home</a></li>
+			          <li><a href="#">Home</a></li>
 			          <li class="divider-vertical"></li>
-			          <li><a href="#">Roadmap</a></li>
+			          <li class="active"><a href="#">Topics</a></li>
 			          <li class="divider-vertical"></li>
 			          <li><a href="#">Marketplace</a></li>
 			          <li class="divider-vertical"></li>
@@ -106,71 +102,11 @@
 			  </div>
 			</div>	    
    
-      <?php
-        $base_url = ""; 
-        $solutions = array();
-        $solutions['1'] = array("id" => 1, "title" => "Water Recycling", 'created_on' => "09/18/12", 'updated_on' => '12/13/12',
-        		"description" => "Water recycling can reduce the water consumption in every household");
-        $solutions['2'] = array("id" => 2, "title" => "Plasma-Arc Burning", 'created_on' => "10/10/12", 'updated_on' => '12/13/12',
-        		"description" => "A plasma-arc is a new way to dispose of wastes, producing very little by-products");
-        $solutions['3'] = array("id" => 3, "title" => "Anaerobic Digesters", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
-        		"description" => "Anerobic digesters can actually produce energy from waste.");     
-        $solutions['4'] = array("id" => 4, "title" => "Cogeneration", 'created_on' => "04/01/12", 'updated_on' => '04/01/13',
-        		"description" => "Reusing extra heat and waste power from one site to help another site.");       
-      ?>
       <div class="row-fluid">
 	      <div class="span9">      
 		      
-	        <?php foreach ($solutions as $solution) { ?>
-	          <div class="row-fluid" style="margin-bottom: 10px">              
-  <div class="span1">
-    <a href="<?php echo $base_url . 'solutions/view/'.$solution['id'] ?>">
-      <img src="../img/solution.png" width=120 height=130 />
-    </a>
-  </div>
-  
-  <div class="span11" style="background: #f5f5f5; padding: 5px; border-radius: 5px;">
-    <div class="span9">
-	    <div>	       
-          <span class="label label-success">Submitted</span>         
-                  
-          <span class="label label-info">In Showcase</span>
-                
-          <?php if ($solution['created_on'] > 0) { ?>
-            <span>
-              <?php echo "Entered " . $solution['created_on']; ?>
-            </span>
-          <?php } ?>
-          <?php if ($solution['updated_on'] > 0) { ?>
-            <span>
-              <?php echo "Updated " . $solution['updated_on']; ?>
-            </span>
-          <?php } ?>
-          </div>         
-          <div style="font-size: 16px; font-weight: bold;">
-            <a href="<?php echo $base_url . 'solution_view?id='.$solution['id']; ?>">
-              <?php echo $solution['title']; ?>
-            </a>
-          </div>                             
-          <div>
-            <?php echo $solution['description'] ?> 
-	        </div>
-      </div>
-      <div class="span2">          
-	          <div class="btn-group">
-	            <a class="btn" href="#"><i class="icon-leaf"></i> Action</a>
-	            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-	            <ul class="dropdown-menu">
-	             <li><a href="<?php echo $base_url . 'solution_view?id='.$solution['id'] ?>"><i class="icon-eye-open"></i>View</a></li>            
-               <li><a href="<?php echo $base_url . 'solution_edit?id='.$solution['id'] ?>"><i class="icon-pencil"></i>Edit/Submit</a></li>            
-               <li class="divider"></li>
-               <li><a href="<?php echo $base_url . 'solution_delete?id='.$solution['id'] ?>"><i class="icon-trash"></i>Delete</a></li>    
-	            </ul>
-	    </div>
-	  </div>
-  </div>
-</div>		       
-		      <?php } ?>	        
+	        <h4>History of Topic Page Creation and Update</h4>   
+	        <div id="chart1" style="width: 800px; height: 400px;"></div>
 	        
         </div><!--/span-->
 	    </div><!-- /row -->  
@@ -192,6 +128,54 @@
 
     </div><!--/.container-->
     
+    <script type="text/javascript">
+      $(function() {
+
+        var chart = new Highcharts.Chart({
+           chart: {
+             renderTo: 'chart1',
+             type: 'column'
+           },
+           title: {
+             text: 'Pages Created or Updated'
+           },          
+           xAxis: {
+             categories: [
+                 'Older',
+                 '6 Weeks ago',
+                 '5 Weeks ago',
+                 '4 Weeks ago',
+                 '3 Weeks ago',
+                 '2 Weeks ago',
+                 '1 Week ago',
+                 'This Week',             
+             ]
+           },
+           yAxis: {
+             min: 0,
+             title: {
+                 text: 'Count'
+             }
+           },   
+           credits: {
+        	    enabled: false
+           },
+           plotOptions: {
+                  column: {
+                      pointPadding: 0.2,
+                      borderWidth: 0
+                  }
+           },
+           series: [{
+                  name: 'Created',
+                  data: [25, 19, 5, 0, 3, 3, 1, 1]      
+              }, {
+                  name: 'Updated',
+                  data: [14, 18, 12, 3, 2, 5, 3, 2]           
+              }]
+          });
+      });
+    </script>
   </body>
 </html>
  

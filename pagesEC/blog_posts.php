@@ -153,8 +153,8 @@
 			  </div>
 			</div>	    
    
-      <?php $data = array();
-        $data['1'] = array("id" => 1, "title" => "Why I am recycling water", 'created_on' => "11/03/12", 'updated_on' => '12/13/12',
+      <?php $posts = array();
+        $posts['1'] = array("id" => 1, "title" => "Why I am recycling water", 'created_on' => "11/03/12", 'updated_on' => '12/13/12',
         		"excerpt" => 
         		"In my house I have installed water recovery units in the sink and bathroom, and have " .
         		"changed all of the irrigation to use the recovered water.  This enables me to save over 30% " .
@@ -163,7 +163,7 @@
         		"rating" => 5,
         		"categories" => array("Water", "Recycling", "Consumer"),
         		"author" => "Tom Smith");
-        $data['2'] = array("id" => 2, "title" => "Tesla Model S shipments are behind", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
+        $posts['2'] = array("id" => 2, "title" => "Tesla Model S shipments are behind", 'created_on' => "10/15/12", 'updated_on' => '12/13/12',
         		"excerpt" => 
         		"The morning after Tesla Motors unveiled its plan to build Superchargers, the electric " .
         		"car company also quietly cut the forecasts for the short term production of its second " .
@@ -175,7 +175,7 @@
         		"rating" => 1,
         		"categories" => array("Transportation", "Electric"),
         		"author" => "John Jarvis");
-        $data['3'] = array("id" => 3, "title" => "Adobe Systems wins green awards", 'created_on' => "10/10/12", 'updated_on' => '12/13/12',
+        $posts['3'] = array("id" => 3, "title" => "Adobe Systems wins green awards", 'created_on' => "10/10/12", 'updated_on' => '12/13/12',
         		"excerpt" => 
         		"Adobe Systems Incorporated (Nasdaq:ADBE) today announced the U.S. Green Building Council " .
         		"(USGBC) has awarded a Leadership in Energy and Environmental Design (LEED) Platinum " .
@@ -187,7 +187,7 @@
         		"rating" => 2,
         		"categories" => array("Industry", "Sustainability", "Waste Reduction"),
         		"author" => "Marianna Grossman");     
-        $data['4'] = array("id" => 4, "title" => "Report from Green Conference '12", 'created_on' => "09/23/12", 'updated_on' => '04/01/13',
+        $posts['4'] = array("id" => 4, "title" => "Report from Green Conference '12", 'created_on' => "09/23/12", 'updated_on' => '04/01/13',
         		"excerpt" => 
         		"The NAHB Green conference is being held this week (April 29 to May 1, 2012) in Nashville, " .
         		"Tennessee. Several GBA employees and bloggers — including Dan Morrison, Michael Chandler, " .
@@ -196,7 +196,7 @@
         		"rating" => 3,
         		"categories" => array("Sustainability"),        		
         		"author" => "Ursula Syrova");   
-        $data['5'] = array("id" => 5, "title" => "NASA Showcase now open", 'created_on' => "09/01/12", 'updated_on' => '04/01/13',
+        $posts['5'] = array("id" => 5, "title" => "NASA Showcase now open", 'created_on' => "09/01/12", 'updated_on' => '04/01/13',
         		"excerpt" => 
         		"NASA Technology Days, a three-day public technology showcase, will take place at the " .
         		"Cleveland Public Auditorium and Conference Center Nov. 28-30. The space technology " .
@@ -212,44 +212,46 @@
       <div class="row-fluid">
 	      <div class="span9">      
 		      
-	        <?php foreach ($data as $item) { ?>
+	        <?php foreach ($posts as $post) { ?>
 	          <?php $moreNeeded = false;
-              $shortExcerpt = $item['excerpt'];
+              $shortExcerpt = $post['excerpt'];
 			        if (strlen($shortExcerpt) > 250) {
 				        $shortExcerpt = substr($shortExcerpt, 0, 250);
 				        $index = strrpos($shortExcerpt, " ");
 				        $shortExcerpt = substr($shortExcerpt, 0, $index);
 				        $moreNeeded = true;
 			        }
-			      ?> 
-	          <?php $categoryLinks = array();
-	            foreach ($item['categories'] as $category) {
-	            	$categoryLinks[] = '<a href="">'.$category.'</a>';
-	            }
-	          ?>
+			      ?> 	         
 	          <div class="post">	         
 	          	           	            							
-						  <div class="title"><a href="../pagesEC/blog_post_detail.php"><?php echo $item['title'] ?></a></div>
+						  <div class="title"><a href="../pagesEC/blog_post_detail.php"><?php echo $post['title'] ?></a></div>
 		          <div class="metadata">
-						    Posted by <a href=""><?php echo $item['author'] ?></a> on <?php echo $item['created_on'] ?>
+						    Posted by <a href=""><?php echo $post['author'] ?></a> on <?php echo $post['created_on'] ?>
 						  </div>			         			          			         		          
 		          <div class="excerpt">
 		            <?php echo $shortExcerpt ?>
 		            <?php if ($moreNeeded) { ?>
 		              <a href="">Read more</a>
 		            <?php } ?>
-		          </div>		
-		          <div class="categories">
-		            Posted in 
-		            <?php echo join(", ", $categoryLinks); ?>
 		          </div>
+		          <?php if ($post['categories']) { ?>
+		            <?php $categoryLinks = array();
+	                foreach ($post['categories'] as $category) {
+	            	    $categoryLinks[] = '<a href="">'.$category.'</a>';
+	                }
+	              ?>		
+		            <div class="categories">
+		              Posted in 
+		              <?php echo join(", ", $categoryLinks); ?>
+		            </div>
+		          <?php } ?>
 		          <div class="comments">
-		            <?php echo $item['numComments'] ?> comment<?php echo $item['numComments'] != 1 ? "s" : "" ?>
+		            <?php echo $post['numComments'] ?> comment<?php echo $post['numComments'] != 1 ? "s" : "" ?>
 		            <div class="pull-right">
-		              Rating: <span id="r<?php echo $item['id'] ?>"></span>
+		              Rating: <span id="r<?php echo $post['id'] ?>"></span>
 		              <script>
 		              $(function() {			              
-		                $('#r<?php echo $item['id'] ?>').raty({ path: "../img/", readOnly	: true,	score	: <?php echo $item['rating'] ?>	});		              
+		                $('#r<?php echo $post['id'] ?>').raty({ path: "../img/", readOnly	: true,	score	: <?php echo $post['rating'] ?>	});		              
 		              });
 					        </script>
 		            </div>
