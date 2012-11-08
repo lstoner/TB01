@@ -159,7 +159,7 @@
 	      	<td valign="top">  <img width="200" height="200" src="../img/product1.png" class="img-rounded"></td>
 	      	<td valign="top">   
 			    <h4>ADD-ON Solar Charging Panel Extensions for ReVIVE Series Solar ReStore XL External Backup Battery Pack</h4>
-				<label> <Strong>Providing Comapny:</Strong></label> 
+				<label> <Strong>Providing Company:</Strong></label> 
 				<label> <a href="#" onclick="return false;">Accessory Power</a></label>
 				
 			<label for "excert">
@@ -172,7 +172,7 @@
 			</table> 
 			
 			<div class="span12">
-			<Legend>Silimar Product Recommendation</Legend>
+			<Legend>Similar Product Recommendation</Legend>
 			 <?php $data = array();
             $data['1'] = array("id"=>1,"title" => "Concentrator PV Panel", 'updated_on' => "2012/09/18", "description" => "High-eff industrial solar panel");
             $data['2'] = array("id"=>2,"title" => "M2 Renewables", 'updated_on' => "2012/10/10", "description" => "Municipal waste recycling systems");
