@@ -233,7 +233,7 @@
 			</div>
 			
 			<div class="span12">
-			<Legend>Comapny Description</Legend>
+			<Legend>Company Description</Legend>
 			www.accessorypower.com
 			
 			</div>
