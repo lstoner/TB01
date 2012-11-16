@@ -208,36 +208,37 @@
 		            Posted in 
 		            <?php echo join(", ", $categoryLinks); ?>
 		          </div>	
-		          <div class="comments">
-		            <?php echo $item['numComments'] ?> comment<?php echo $item['numComments'] != 1 ? "s" : "" ?>
+		          <div class="comments">		            
+		            <div class="pull-left">
+		              My rating: <span id="m<?php echo $item['id'] ?>"></span>
+		              <script>
+		              $(function() {			              
+		                $('#m<?php echo $item['id'] ?>').raty({ path: "../img/", score	: <?php echo $item['rating'] ?>	});		              
+		              });
+					        </script>
+		            </div>
 		            <div class="pull-right">
-		              Rating: <span id="r<?php echo $item['id'] ?>"></span>
+		              Average Rating: <span id="r<?php echo $item['id'] ?>"></span>
 		              <script>
 		              $(function() {			              
 		                $('#r<?php echo $item['id'] ?>').raty({ path: "../img/", readOnly	: true,	score	: <?php echo $item['rating'] ?>	});		              
 		              });
 					        </script>
 		            </div>
-		            <div class="comment">Bob said: I like this idea</div>
-		            <div class="comment">Tom said: Would this work for me?</div>
-		            <div class="comment">Sally said: What is the level of efficiency that you are getting?</div>
-		            <div class="comment">Mary said: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>		           
-		          </div>
-		          <div>
-		            My rating: <span id="m<?php echo $item['id'] ?>"></span>
-		            <script>
-		              $(function() {			              
-		                $('#m<?php echo $item['id'] ?>').raty({ path: "../img/", score	: <?php echo $item['rating'] ?>	});		              
-		              });
-					        </script>
-		          </div>
-		          <div><a href="">Add Comment</a></div>   
-		          <form>
-		          
-		            Comment: <textarea style="width: 590px; height: 100px"></textarea>
-		            <br>
-		            <input type="submit" value="Submit Comment" />
-		          </form>   
+		            <div style="clear:both"></div>
+		            <?php echo $item['numComments'] ?> comment<?php echo $item['numComments'] != 1 ? "s" : "" ?>:
+		            <div class="comment">On Oct 08 2012, Bob Carpenter said: I like this idea</div>
+		            <div class="comment">On Oct 17 2012, Tom Hill said: Would this work for me?</div>
+		            <div class="comment">On Nov 14 2012, Sally Smith said: What is the level of efficiency that you are getting?</div>
+		            <div class="comment">On Nov 16 2012, Mary Jones said: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+		            <div style="margin-top: 4px; background: #eee; padding: 5px">
+		              <form style="margin: 0px">		          
+				            <textarea style="width: 640px; height: 80px"></textarea>
+				            <br>
+				            <input type="submit" value="Add Comment" />
+			            </form>
+			          </div>  		           
+		          </div>		          		         		           
 			      </div>	       
 		      <?php } ?>	        	       
         </div><!--/span-->
