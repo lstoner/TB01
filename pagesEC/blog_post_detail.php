@@ -210,7 +210,10 @@
 		          </div>	
 		          <div class="comments">		            
 		            <div class="pull-left">
-		              My rating: <span id="m<?php echo $item['id'] ?>"></span>
+		              <form style="margin:0px">
+		                My rating: <span id="m<?php echo $item['id'] ?>"></span>
+		                <input type="submit" value="Rate!" />
+		              </form>
 		              <script>
 		              $(function() {			              
 		                $('#m<?php echo $item['id'] ?>').raty({ path: "../img/", score	: <?php echo $item['rating'] ?>	});		              
@@ -235,7 +238,7 @@
 		              <form style="margin: 0px">		          
 				            <textarea style="width: 650px; height: 70px"></textarea>
 				            <br>
-				            <input type="submit" value="Add Comment" />
+				            <input type="submit" value="Post New Comment" />
 			            </form>
 			          </div>  		           
 		          </div>		          		         		           
