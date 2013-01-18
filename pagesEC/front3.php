@@ -148,7 +148,7 @@
 			    <div class="span3">
 			      <div class="rightPanel">			      
 				      <a href="#" class="pop" style="text-decoration: none; color: white;" rel="popover"
-							data-original-title="My Popover Title" data-content="This is my popover content">
+							data-original-title="My Popover Title" data-content="This is my water popover content">
 							  Water						
 							</a>
 							<div class="progress" style="margin: 10px 10px 0 10px;">
@@ -158,7 +158,7 @@
 						</div>
 			      <div class="rightPanel">
 				      <a href="#" class="pop" style="text-decoration: none; color: white;" rel="popover"
-							data-original-title="My Popover Title" data-content="This is my popover content">
+							data-original-title="My Popover Title" data-content="This is my energy popover content">
 							  Energy
 							</a>
 							<div class="progress" style="margin: 10px 10px 0 10px;">
@@ -167,7 +167,7 @@
 			      </div>
 			      <div class="rightPanel">
 			        <a href="#" class="pop" style="text-decoration: none; color: white;" rel="popover"
-							data-original-title="My Popover Title" data-content="This is my popover content">
+							data-original-title="My Popover Title" data-content="This is my materials popover content">
 							  Materials
 							</a>
 							<div class="progress" style="margin: 10px 10px 0 10px;">
@@ -186,7 +186,7 @@
 			      </div>
 			      <div class="rightPanel">
 			        <a href="#" class="pop" style="text-decoration: none; color: white;" rel="popover"
-							data-original-title="My Popover Title" data-content="This is my popover content">
+							data-original-title="My Popover Title" data-content="This is my planetary popover content">
 							  Planetary
 							</a>
 							<div class="progress" style="margin: 10px 10px 0 10px;">
@@ -269,7 +269,7 @@
     
     <script type="text/javascript">
       $(function () {           
-        $(".pop").popover({trigger: 'hover'});          
+        $(".pop").popover({trigger: 'hover'});           
       });  
     </script>
   </body>
