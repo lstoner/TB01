@@ -142,9 +142,43 @@
 				
 				</div><!--/row-->
 				<div class="row-fluid">
-					<div class="well" >
-					 
-						<h3 style="margin-left:40%">Live Rss/Ticker</h3>
+					<div class="well" >					 
+						<h5 style="margin-left:40%">Live Rss/Ticker</h5>						
+						<div id="myCarousel" class="carousel slide">
+						  <!-- Carousel items -->
+						  <div class="carousel-inner">
+						    <div class="active item">
+						     <img src="../img/carousel-image-01.jpg" alt="" style="height:200px; width:100%">
+						     <div class="carousel-caption">				     
+		                      <h4>Top News: call for solutions </h4>
+		                      <p>Sustainable Silicon Valley's Call for Solutions is your opportunity to showcase your creative solutions advancing global sustainability.  Your solution could be among those selected for special recognition and awards. .</p>
+		                    </div>
+						    
+						    </div>
+						    <div class="item">
+						     <img src="../img/carousel-image-02.jpg" alt="" style="height:200px; width:100%">
+						     <div class="carousel-caption">				     
+		                      <h4>Top News: call for solutions </h4>
+		                      <p>Sustainable Silicon Valley's Call for Solutions is your opportunity to showcase your creative solutions advancing global sustainability.  Your solution could be among those selected for special recognition and awards. .</p>
+		                    </div>
+						    
+						    
+						    </div>
+						    <div class="item">
+						     <img src="../img/carousel-image-03.jpg" alt="" style="height:200px; width:100%">
+						     <div class="carousel-caption">				     
+		                      <h4>Top News: call for solutions </h4>
+		                      <p>Sustainable Silicon Valley's Call for Solutions is your opportunity to showcase your creative solutions advancing global sustainability.  Your solution could be among those selected for special recognition and awards. .</p>
+		                    </div>
+						    
+						    
+						    </div>
+						  </div>
+						  <!-- Carousel nav -->
+						  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+						  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+						</div>						
+						
 						<div style="margin-left:30%">
 							<a class="btn" style="margin-right:3%"><i class="icon-thumbs-up"></i>like</a>
 							<a class="btn" style="margin-right:3%"><i class="icon-signal"></i>Twitter</a>
