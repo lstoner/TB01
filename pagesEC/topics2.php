@@ -168,24 +168,47 @@
 					<div class="span6">
 						<div class="well" style="height:300px">
 							<h4> Core Knowledge</h4>
-							<a class="btn btn-info">by popular</a>
-							<a class="btn btn-success">by latest</a>
-							<table class="table table-striped">
-								<thead>
-									<th>date</th>
-									<th>title</th>
-								</thead>
-								<tbody>
-								 <?php foreach ($data as $d):?>
-								 <tr>
-								 <td> <?php echo $d["updated_on"]?></td>
-								 <td> <?php echo $d["title"]?></td>							
-								 </tr>
-								 <?php endforeach?>
-								
-								</tbody>
+							<div>
 							
-							</table>
+							<ul class="thumbnails">
+							
+							  <li class="span4">
+							    <a href="#" class="thumbnail">
+							     <img class="img-rounded" src="../img/energy2.jpg" style="height:60px;" alt=""></img>
+							    </a>
+							
+							  </li>
+							  
+							  <li class="span4">
+							    <a href="#" class="thumbnail">
+							     <img class="img-rounded" src="../img/water.jpg" style="height:60px;" alt=""></img>
+							    </a>
+							  
+							  </li>
+							  
+							   <li class="span4">
+							    <a href="#" class="thumbnail">
+							     <img class="img-rounded" src="../img/material.jpg" style="height:60px;" alt=""></img>
+							    </a>
+							    
+							  </li>
+							  
+							   <li class="span4">
+							    <a href="#" class="thumbnail">
+							     <img class="img-rounded" src="../img/transportation.jpg" style="height:60px;" alt=""></img>
+							    </a>
+			
+							  </li>
+							   <li class="span4">
+							    <a href="#" class="thumbnail">
+							     <img class="img-rounded" src="../img/othertopic.png" style="height:60px;" alt=""></img>
+							    </a>
+			
+							  </li>
+							
+							</ul>
+							
+							</div>
 						</div>
 					</div>
 					<div class="span6">
@@ -217,24 +240,9 @@
 					<div class="span6">
 						<div class="well" style="height:300px">
 						  <h4>Evaluate your smart grid:Tools and Metrics</h4>
-						  <a class="btn btn-info">by popular</a>
-							<a class="btn btn-success">by latest</a>
-							<table class="table table-striped">
-								<thead>
-									<th>date</th>
-									<th>title</th>
-								</thead>
-								<tbody>
-								 <?php foreach ($data as $d):?>
-								 <tr>
-								 <td> <?php echo $d["updated_on"]?></td>
-								 <td> <?php echo $d["title"]?></td>							
-								 </tr>
-								 <?php endforeach?>
-								
-								</tbody>
-							
-							</table>
+							<div>
+							  <img class="img-rounded" src="../img/smartgrid.jpg" style="height:200px;" alt=""></img>
+							</div>
 						</div>
 					</div>
 					
