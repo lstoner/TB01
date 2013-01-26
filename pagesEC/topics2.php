@@ -127,185 +127,227 @@
 			    </div>
 			  </div>
 			</div>
-
-		<div class="row-fluid">
-			<div class="span9">
+	<div class="row-fluid">
+		<div class="span9">
 
 				<div class="row-fluid">
 					<div style="margin-bottom: 20px">
-						<a class="btn btn-large btn-primary"  style="margin-right: 20px">Smart Grid</a>
-						<a class="btn btn-large btn-primary" style="margin-right: 20px">Renewables</a>
-						<a class="btn btn-large btn-primary" style="margin-right: 20px">Effeciency</a>
+						<a class="btn btn-large btn-primary" style="margin-right: 20px">Smart
+							Grid</a> <a class="btn btn-large btn-primary"
+							style="margin-right: 20px">Renewables</a> <a
+							class="btn btn-large btn-primary" style="margin-right: 20px">Effeciency</a>
 						<a class="btn btn-large btn-primary" style="margin-right: 20px">Policies</a>
-						<a class="btn btn-large btn-primary" style="margin-right: 20px">Events Archive</a>
+						<a class="btn btn-large btn-primary" style="margin-right: 20px">Events
+							Archive</a>
 					</div>
-				
-				</div><!--/row-->
+
+				</div>
+				<!--/row-->
 				<div class="row-fluid">
-					<div class="well" >					 
-						<h5 style="margin-left:40%">Live Rss/Ticker</h5>						
+					<div class="well">
+						<h5 style="margin-left: 40%">Live Rss/Ticker</h5>
 						<div id="myCarousel" class="carousel slide">
-						  <!-- Carousel items -->
-						  <div class="carousel-inner">
-						    <div class="active item">
-						     <img src="../img/carousel-image-01.jpg" alt="" style="height:200px; width:100%">
-						     <div class="carousel-caption">				     
-		                      <h4>Top News: call for solutions </h4>
-		                      <p>Sustainable Silicon Valley's Call for Solutions is your opportunity to showcase your creative solutions advancing global sustainability.  Your solution could be among those selected for special recognition and awards. .</p>
-		                    </div>
-						    
-						    </div>
-						    <div class="item">
-						     <img src="../img/carousel-image-02.jpg" alt="" style="height:200px; width:100%">
-						     <div class="carousel-caption">				     
-		                      <h4>Top News: call for solutions </h4>
-		                      <p>Sustainable Silicon Valley's Call for Solutions is your opportunity to showcase your creative solutions advancing global sustainability.  Your solution could be among those selected for special recognition and awards. .</p>
-		                    </div>
-						    
-						    
-						    </div>
-						    <div class="item">
-						     <img src="../img/carousel-image-03.jpg" alt="" style="height:200px; width:100%">
-						     <div class="carousel-caption">				     
-		                      <h4>Top News: call for solutions </h4>
-		                      <p>Sustainable Silicon Valley's Call for Solutions is your opportunity to showcase your creative solutions advancing global sustainability.  Your solution could be among those selected for special recognition and awards. .</p>
-		                    </div>
-						    
-						    
-						    </div>
-						  </div>
-						  <!-- Carousel nav -->
-						  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-						  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-						</div>						
-						
-						<div style="margin-left:30%">
-							<a class="btn" style="margin-right:3%"><i class="icon-thumbs-up"></i>like</a>
-							<a class="btn" style="margin-right:3%"><i class="icon-signal"></i>Twitter</a>
-							<a class="btn" style="margin-right:3%"><i class="icon-thumbs-up"></i>Like</a>
-							<a class="btn" style="margin-right:3%"><i class="icon-pencil"></i>Comment</a>
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="active item">
+									<img src="../img/carousel-image-01.jpg" alt=""
+										style="height: 200px; width: 100%">
+									<div class="carousel-caption">
+										<h4>Top News: call for solutions</h4>
+										<p>Sustainable Silicon Valley's Call for Solutions is your
+											opportunity to showcase your creative solutions advancing
+											global sustainability. Your solution could be among those
+											selected for special recognition and awards. .</p>
+									</div>
+
+								</div>
+								<div class="item">
+									<img src="../img/carousel-image-02.jpg" alt=""
+										style="height: 200px; width: 100%">
+									<div class="carousel-caption">
+										<h4>Top News: call for solutions</h4>
+										<p>Sustainable Silicon Valley's Call for Solutions is your
+											opportunity to showcase your creative solutions advancing
+											global sustainability. Your solution could be among those
+											selected for special recognition and awards. .</p>
+									</div>
+
+
+								</div>
+								<div class="item">
+									<img src="../img/carousel-image-03.jpg" alt=""
+										style="height: 200px; width: 100%">
+									<div class="carousel-caption">
+										<h4>Top News: call for solutions</h4>
+										<p>Sustainable Silicon Valley's Call for Solutions is your
+											opportunity to showcase your creative solutions advancing
+											global sustainability. Your solution could be among those
+											selected for special recognition and awards. .</p>
+									</div>
+
+
+								</div>
+							</div>
+							<!-- Carousel nav -->
+							<a class="carousel-control left" href="#myCarousel"
+								data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
+								href="#myCarousel" data-slide="next">&rsaquo;</a>
 						</div>
-						
-					</div>			
-				</div><!--/row-->
+
+						<div style="margin-left: 30%">
+							<a class="btn" style="margin-right: 3%"><i class="icon-thumbs-up"></i>like</a>
+							<a class="btn" style="margin-right: 3%"><i class="icon-signal"></i>Twitter</a>
+							<a class="btn" style="margin-right: 3%"><i class="icon-thumbs-up"></i>Like</a>
+							<a class="btn" style="margin-right: 3%"><i class="icon-pencil"></i>Comment</a>
+						</div>
+
+					</div>
+				</div>
+				<!--/row-->
+
+				<?php $data = array();
+				$data['1'] = array("id"=>1,"title" => "Holiday Book Talk: Gift Book Suggestions", 'updated_on' => "2012/09/18", "description" => "High-eff industrial solar panel");
+				$data['2'] = array("id"=>2,"title" => "Transportation Meeting @ City of Mountain View 12/5, 7-9 pm", 'updated_on' => "2012/10/10", "description" => "Municipal waste recycling systems");
+				$data['3'] = array("id"=>3,"title" => "Bay Area inspector wins prestigious awards", 'updated_on' => "2012/10/15", "description" => "Collector system for households");
+				$data['4'] = array("id"=>4,"title" => "Silicon Valley Water Awards", 'updated_on' => "2012/10/15", "description" => "Collector system for households");
+				?>
 				
-			<?php $data = array();
-            $data['1'] = array("id"=>1,"title" => "Holiday Book Talk: Gift Book Suggestions", 'updated_on' => "2012/09/18", "description" => "High-eff industrial solar panel");
-            $data['2'] = array("id"=>2,"title" => "Transportation Meeting @ City of Mountain View 12/5, 7-9 pm", 'updated_on' => "2012/10/10", "description" => "Municipal waste recycling systems");
-            $data['3'] = array("id"=>3,"title" => "Bay Area inspector wins prestigious awards", 'updated_on' => "2012/10/15", "description" => "Collector system for households");         
-            $data['4'] = array("id"=>4,"title" => "Silicon Valley Water Awards", 'updated_on' => "2012/10/15", "description" => "Collector system for households");
-            ?>
-     
-            
-				
+		<h2>SubTopic</h2>
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+          <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab1" data-toggle="tab">Smart Grid</a></li>
+          <li><a href="#tab2" data-toggle="tab">Renewables</a></li>
+          <li><a href="#tab3" data-toggle="tab">Topic 3</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <p></p>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <p></p>                
+            </div>
+            <div class="tab-pane" id="tab3">
+              <p></p>
+            </div>
+          </div>
+        </div>   
+
+
 				<div class="row-fluid">
 					<div class="span6">
-						<div class="well" style="height:300px">
-							<h4> Core Knowledge</h4>
-							<div>
-							
-							<ul class="thumbnails">
-							
-							  <li class="span4">
-							    <a href="#" class="thumbnail">
-							     <img class="img-rounded" src="../img/energy2.jpg" style="height:60px;" alt=""></img>
-							    </a>
-							
-							  </li>
-							  
-							  <li class="span4">
-							    <a href="#" class="thumbnail">
-							     <img class="img-rounded" src="../img/water.jpg" style="height:60px;" alt=""></img>
-							    </a>
-							  
-							  </li>
-							  
-							   <li class="span4">
-							    <a href="#" class="thumbnail">
-							     <img class="img-rounded" src="../img/material.jpg" style="height:60px;" alt=""></img>
-							    </a>
-							    
-							  </li>
-							  
-							   <li class="span4">
-							    <a href="#" class="thumbnail">
-							     <img class="img-rounded" src="../img/transportation.jpg" style="height:60px;" alt=""></img>
-							    </a>
-			
-							  </li>
-							   <li class="span4">
-							    <a href="#" class="thumbnail">
-							     <img class="img-rounded" src="../img/othertopic.png" style="height:60px;" alt=""></img>
-							    </a>
-			
-							  </li>
-							
-							</ul>
-							
-							</div>
+						<div class="well" style="height: 300px">
+							<h4>Energy</h4>
+							<a class="btn btn-info">by popular</a> <a class="btn btn-success">by
+							latest</a>
+								<!--  
+								<ul class="thumbnails">
+
+									<li class="span4"><a href="#" class="thumbnail"> <img
+											class="img-rounded" src="../img/energy2.jpg"
+											style="height: 60px;" alt="">Energy</img>
+									</a>
+									</li>
+
+									<li class="span4"><a href="#" class="thumbnail"> <img
+											class="img-rounded" src="../img/water.jpg"
+											style="height: 60px;" alt="">Water</img>
+									</a>
+									</li>
+
+									<li class="span4"><a href="#" class="thumbnail"> <img
+											class="img-rounded" src="../img/material.jpg"
+											style="height: 60px;" alt="">Material</img>
+									</a>
+									</li>
+
+									<li class="span4"><a href="#" class="thumbnail"> <img
+											class="img-rounded" src="../img/transportation.jpg"
+											style="height: 60px;" alt="">Transportation</img>
+									</a>
+									</li>
+									<li class="span4"><a href="#" class="thumbnail"> <img
+											class="img-rounded" src="../img/othertopic.png"
+											style="height: 60px;" alt="">Systemic</img>
+									</a>
+									</li>
+									<li class="span4"><a href="#" class="thumbnail"> <img
+											class="img-rounded" src="../img/othertopic.png"
+											style="height: 60px;" alt="">Government/Cities</img>
+									</a>
+									</li>
+
+								</ul>
+								-->
+						
 						</div>
 					</div>
 					<div class="span6">
-						<div class="well" style="height:300px">
-							<h4> Successful Stories</h4>
-							<a class="btn btn-info">by popular</a>
-							<a class="btn btn-success">by latest</a>
+						<div class="well" style="height: 300px">
+							<h4>Successful Stories</h4>
+							<a class="btn btn-info">by popular</a> <a class="btn btn-success">by
+								latest</a>
 							<table class="table table-striped">
 								<thead>
 									<th>date</th>
 									<th>title</th>
 								</thead>
 								<tbody>
-								 <?php foreach ($data as $d):?>
-								 <tr>
-								 <td> <?php echo $d["updated_on"]?></td>
-								 <td> <?php echo $d["title"]?></td>							
-								 </tr>
-								 <?php endforeach?>
-								
+									<?php foreach ($data as $d):?>
+									<tr>
+										<td><?php echo $d["updated_on"]?></td>
+										<td><?php echo $d["title"]?></td>
+									</tr>
+									<?php endforeach?>
+
 								</tbody>
-							
+
 							</table>
 						</div>
-					</div>		
-				</div><!--/row-->
+					</div>
+				</div>
+				<!--/row-->
 				
+ 
+
 				<div class="row-fluid">
 					<div class="span6">
-						<div class="well" style="height:300px">
-						  <h4>Evaluate your smart grid:Tools and Metrics</h4>
+						<div class="well" style="height: 300px">
+							<h4>Tools and Resources</h4>
 							<div>
-							  <img class="img-rounded" src="../img/smartgrid.jpg" style="height:200px;" alt=""></img>
+								<img class="img-rounded" src="../img/smartgrid.jpg"
+									style="height: 200px;" alt=""></img>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="span6">
-						<div class="well" style="height:300px">
-						  <h4>Smart Grid: Local News & Development</h4>
-						  <a class="btn btn-info">by popular</a>
-							<a class="btn btn-success">by latest</a>
+						<div class="well" style="height: 300px">
+							<h4>Local Developmentst</h4>
+							<a class="btn btn-info">by popular</a> <a class="btn btn-success">by
+								latest</a>
 							<table class="table table-striped">
 								<thead>
 									<th>date</th>
 									<th>title</th>
 								</thead>
 								<tbody>
-								 <?php foreach ($data as $d):?>
-								 <tr>
-								 <td> <?php echo $d["updated_on"]?></td>
-								 <td> <?php echo $d["title"]?></td>							
-								 </tr>
-								 <?php endforeach?>
-								
+									<?php foreach ($data as $d):?>
+									<tr>
+										<td><?php echo $d["updated_on"]?></td>
+										<td><?php echo $d["title"]?></td>
+									</tr>
+									<?php endforeach?>
+
 								</tbody>
-							
+
 							</table>
 						</div>
-					</div>		
-				</div><!--/row-->
-				
-			</div><!--/span9-->
+					</div>
+				</div>
+				<!--/row-->
+
+			</div>
+			<!--/span9-->
 
 			<div class="span3">
 				<div class="widget w1">
