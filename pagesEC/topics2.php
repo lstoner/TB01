@@ -95,7 +95,9 @@
 			        <ul class="nav">
 			          <li class="active"><a href="#">Home</a></li>
 			          <li class="divider-vertical"></li>
-			          <li><a href="#">Roadmap</a></li>
+			          <li><a href="#">Topics</a></li>
+			          <li class="divider-vertical"></li>
+			          <li><a href="#">Roadmap</a></li>			            
 			          <li class="divider-vertical"></li>
 			          <li><a href="#">Marketplace</a></li>
 			          <li class="divider-vertical"></li>
@@ -110,14 +112,14 @@
 		                 <li><a href="#">One more separated link</a></li>
 		               </ul>
 			          </li>
-			          <li class="divider-vertical"></li>
+			         <!--   <li class="divider-vertical"></li>
 			          <li class="dropdown">
 			            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solution <b class="caret"></b></a>
 			            <ul class="dropdown-menu">
 			              <li><a href="#">contribute</a></li>
 			              <li><a href="#">find</a></li>
 			            </ul>
-			          </li>
+			          </li>-->
 			          <li class="divider-vertical"></li>
 			          <form class="navbar-search pull-left">
 			            <input type="text" class="search-query" placeholder="Search">
@@ -127,9 +129,29 @@
 			    </div>
 			  </div>
 			</div>
+			
+			 <div class="row-fluid">
+        <div class="span12">     
+	        <div class="navbar">
+			      <div class="navbar-inner">
+			        <a class="brand" href="#"></a>
+			        <ul class="nav">
+			          <li class="active"><a href="#">Smart Grid</a></li>
+			          <li class="divider-vertical"></li>
+			          <li><a href="#">Renewable</a></li>
+			          <li class="divider-vertical"></li>
+			          <li><a href="#">Effeciency</a></li>			            
+			          <li class="divider-vertical"></li>
+			          <li><a href="#">Other topic</a></li>
+			          <li class="divider-vertical"></li>	  
+			        </ul>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 	<div class="row-fluid">
 		<div class="span9">
-
+<!-- 
 				<div class="row-fluid">
 					<div style="margin-bottom: 20px">
 						<a class="btn btn-large btn-primary" style="margin-right: 20px">Smart
@@ -141,13 +163,13 @@
 							Archive</a>
 					</div>
 
-				</div>
+				</div> -->
 				<!--/row-->
+				<!--  
 				<div class="row-fluid">
 					<div class="well">
 						<h5 style="margin-left: 40%">Live Rss/Ticker</h5>
 						<div id="myCarousel" class="carousel slide">
-							<!-- Carousel items -->
 							<div class="carousel-inner">
 								<div class="active item">
 									<img src="../img/carousel-image-01.jpg" alt=""
@@ -188,7 +210,7 @@
 
 								</div>
 							</div>
-							<!-- Carousel nav -->
+
 							<a class="carousel-control left" href="#myCarousel"
 								data-slide="prev">&lsaquo;</a> <a class="carousel-control right"
 								href="#myCarousel" data-slide="next">&rsaquo;</a>
@@ -202,7 +224,7 @@
 						</div>
 
 					</div>
-				</div>
+				</div>-->
 				<!--/row-->
 
 				<?php $data = array();
@@ -283,7 +305,7 @@
 					</div>
 					<div class="span6">
 						<div class="well" style="height: 300px">
-							<h4>Successful Stories</h4>
+							<h4>Succes Stories and Case Studies</h4>
 							<a class="btn btn-info">by popular</a> <a class="btn btn-success">by
 								latest</a>
 							<table class="table table-striped">
@@ -322,7 +344,7 @@
 
 					<div class="span6">
 						<div class="well" style="height: 300px">
-							<h4>Local Developmentst</h4>
+							<h4>Local Developments</h4>
 							<a class="btn btn-info">by popular</a> <a class="btn btn-success">by
 								latest</a>
 							<table class="table table-striped">
@@ -348,7 +370,7 @@
 
 			</div>
 			<!--/span9-->
-
+  
 			<div class="span3">
 				<div class="widget w1">
 					<div class="title">Recent Blog Posts</div>
@@ -394,7 +416,6 @@
 					</div>
 				</div>
 			</div>
-			<!--/span3-->
 		</div>
 		<!--/row-->      
 
