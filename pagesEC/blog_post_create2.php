@@ -7,11 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="Jeff Risberg">
   
-    <link href="../css/bootstrap.css" rel="stylesheet">   
-    <link href="../css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">   
+    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
     
     <script src="../js/jquery-1.8.3.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/less-1.3.0.min.js"></script>
     
     <link href="../css/stylesEC.less" rel="stylesheet">

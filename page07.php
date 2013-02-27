@@ -8,8 +8,8 @@
 		<meta name="description" content="">
 		<meta name="author" content="Jeff Risberg">
 		
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 		
 		<style type="text/css">
 		  body {
@@ -27,7 +27,7 @@
 
   <body>
     <script src="js/jquery-1.8.3.min.js"></script>
-	  <script src="js/bootstrap.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
 	  
 	 
   <div class="navbar navbar-inverse navbar-fixed-top">
