@@ -1,0 +1,303 @@
+<!-- Combining several components into EcoCloud-like page -->
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jeff Risberg">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">   
+    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+    
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/less-1.3.0.min.js"></script>
+    
+    <link href="../css/stylesEC.less" rel="stylesheet">
+    
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 20px;
+        font-size: 13px;
+      }
+      hr { 
+        height: 3px; color: #888 !important; background-color: #888 !important;
+      }      
+      .page-header {
+        padding: 10px 10px 10px 10px;
+        margin: 0px 0px 0px 0px;
+        background: #EEEEEE;
+        border-radius: 10px 10px 10px 10px; 
+      }      
+      .widget > div {       
+        padding: 3px 5px 3px 5px;             
+        background-color: #f9f9f9;  
+        border-bottom: 1px solid #ddd;      
+      }
+      .widget > div.title {       
+        font-weight: bold;       
+        margin-top: 5px;
+        background-color: #006DCC;
+        color: white;
+        border-radius: 5px 5px 0px 0px; 
+      }      
+      .widget > div:nth-child(2n+0) {       
+        background-color: #f0f0f0; 
+      }
+      .widget > div:last-child {              
+        border-radius: 0px 0px 5px 5px;
+        margin-bottom: 5px;   
+      }
+      .widget.upcoming-events div.title {
+        background-color: red;
+      }
+    </style>
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../ico/favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <!-- by default, the next element is not shown -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar">A</span>
+            <span class="icon-bar">B</span>
+            <span class="icon-bar">C</span>
+          </a>
+          <a class="brand" href="../index.html">TB01</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+
+      <header>      
+      <div class="page-header">
+        <h1>Welcome to EcoCloud</h1>
+        <p>
+         Donec id elit non mi porta gravida at eget metus. 
+         Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+         ut fermentum massa justo sit amet risus. 
+         Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>        
+      </div>
+      </header>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span2">
+          <div class="widget recent_blog_posts">
+            <div class="title">Recent Blog Posts</div>            
+            <div class="post">
+              Adobe Systems is winning awards
+            </div>
+            <div class="post">
+              Now is the time for
+            </div>
+            <div class="post">
+              Sustainability
+            </div> 
+            <div class="post">
+              Why I'm recycling
+            </div>                      
+          </div>
+          <div class="widget upcoming-events">
+            <div class="title">Upcoming Events</div>           
+            <div class="event">
+              NASA Event
+              <div clas="date">08/23/12</div>
+            </div>
+            <div class="event">
+              SAP Event
+              <div class="date">10/05/12</div>
+            </div>  
+             <div class="event">
+              Sustainability Workshop
+              <div class="date">10/15/12</div>
+            </div>                    
+          </div>
+          <div class="widget recent_activity">
+            <div class="title">Recent Activity</div>            
+            <div class="activity">
+              <div class="title">
+                Jack Smith commented on "The Water-Energy Nexus" on 09/12/12</div>
+            </div>
+            <div class="activity">
+              <div class="title">
+                Sally Jones commented on "Recycled Water Case Study" on 09/14/12</div>
+            </div>
+            <div class="activity">
+              <div class="title">
+                Sally Jones commented on "New Trends in Wind Power Usage" on 09/15/12</div>
+             </div>                      
+          </div>
+          <div class="widget about-us">
+            <div class="title">About Us</div> 
+            <div class="text">
+              SSV is a leadership group that helps companies become more sustainable.
+            </div>           
+            <div class="text">
+              We welcome your financial support of EcoCloud™.<br/> 
+              You can contribute by making a tax-deductible donation to Sustainable Silicon Valley, 
+              a 501(c)(3) non-profit organization. Tax ID: 56-2464045.
+            </div>                      
+          </div>
+        </div>
+        
+        <div class="span4">
+          <div style="height: 300px; background: #eee; margin-top: 10px">
+          <h3>Core Knowledge</h3>
+          
+          Neque porro quisquam est qui dolorem ipsum quia dolor 
+          <h4>Sub 1</h4>
+          sit amet, consectetur, adipisci veli
+          <h4>Sub 2</h4>
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci veli
+          </div>
+          
+          <div style="height: 300px; background: #eee; margin-top: 10px">
+          <h3>Success Stories</h3>
+           dummy text of the printing and typesetting industry. Lorem Ipsum
+           has been the industry's standard dummy text ever since the 1500s, 
+           when an unknown printer 
+           <h3>Head</h3>
+           took a galley of type and scrambled it to make a 
+           type specimen book. It has survived not only five centuries, but also the leap int
+          </div>
+        </div>
+        
+        <div class="span4">
+          <div style="height: 300px; background: #eee; margin-top: 10px">
+          <h3>Tools and Resources</h3>
+           dummy text of the printing and typesetting industry. Lorem Ipsum
+           has been the industry's standard dummy text ever since the 1500s, 
+           <h4>Sub 1</h4>
+           when an unknown printer took a galley of type and scrambled it to make a 
+           type specimen book. It has survived not only five centuries, but also the leap int
+          </div>
+          
+          <div style="height: 300px; background: #eee; margin-top: 10px">
+          <h3>Developments & News</h3>
+           dummy text of the printing and typesetting industry. Lorem Ipsum
+           has been the industry's standard dummy text ever since the 1500s,
+           <h4>Sub 2</h4> 
+           when an unknown printer took a galley of type and scrambled it to make a 
+           type specimen book. It has survived not only five centuries, but also the leap int
+          </div>
+        </div>
+        
+        <div class="span2">
+	        <div class="widget recent_blog_posts">
+	          <div class="title">Recent Blog Posts</div>	          
+	          <div class="post">
+	            Adobe Systems is winning awards
+	          </div>
+	          <div class="post">
+	            Now is the time for all
+	          </div>
+	          <div class="post">
+              Sustainability Showcase
+            </div> 
+            <div class="post">
+              Why I'm recycling all
+            </div> 	                    
+	        </div>
+	        <div class="widget upcoming-events">
+	          <div class="title">Upcoming Events</div>	         
+	          <div class="event">
+	            NASA Event
+	            <div clas="date">08/23/12</div>
+	          </div>
+	          <div class="event">
+	            SAP Event
+	            <div class="date">10/05/12</div>
+	          </div>  
+	           <div class="event">
+              Sustainability Workshop
+              <div class="date">10/15/12</div>
+            </div>      	            
+	        </div>
+	        <div class="widget recent_activity">
+            <div class="title">Recent Activity</div>            
+            <div class="activity">
+              <div class="title">
+                Jack Smith commented </div>
+            </div>
+            <div class="activity">
+              <div class="title">
+                Sally Jones commented</div>
+            </div>
+            <div class="activity">
+              <div class="title">
+                Sally Jones commented</div>
+             </div>                      
+          </div>
+          <div class="widget about-us">
+            <div class="title">About Us</div> 
+            <div class="text">
+              SSV is a leadership group.
+            </div>           
+            <div class="text">
+              We welcome your
+            </div>                      
+          </div>
+	      </div>
+        
+      </div>
+
+      <button class="btn btn-large btn-block btn-primary" type="button">Block level button</button>
+      <button class="btn btn-large btn-block" type="button">Block level button</button>
+    
+      <hr />
+
+      <footer>      
+       <div class="row">
+         <div class="span12">
+           <div class="pull-left">
+             &copy; 2010 - 2012 by Sustainable Silicon Valley. All Rights Reserved.
+           </div>
+           <div class="pull-right">        
+             About Us | Sign Up for Newsletter | Donate | Contact Us | Help | Terms of Service
+           </div>
+         </div>
+       </div>    
+      </footer>
+
+    </div> <!-- /container -->
+  
+  </body>
+</html>
