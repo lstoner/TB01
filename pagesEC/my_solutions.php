@@ -71,11 +71,11 @@
 			      <div class="navbar-inner">
 			        <a class="brand" href="#"></a>
 			        <ul class="nav">
-			          <li class="active"><a href="#">Home</a></li>
+			          <li><a href="#">Home</a></li>
 			          <li class="divider-vertical"></li>
 			          <li><a href="#">Roadmap</a></li>
 			          <li class="divider-vertical"></li>
-			          <li><a href="#">Marketplace</a></li>
+			          <li  class="active"><a href="#">Challenges</a></li>
 			          <li class="divider-vertical"></li>
 			          <li class="dropdown">
 		               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collaboration <b class="caret"></b></a>
